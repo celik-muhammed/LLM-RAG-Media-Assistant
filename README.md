@@ -1,2 +1,2 @@
-# RAG-Retrieval-Augmented-Banking-and-Wealth-Assistant
-RAG-Retrieval-Augmented-Banking-and-Wealth-Assistant
+# LLM-Retrieval-Augmented-Media-Assistant
+LLM-Retrieval-Augmented-Media-Assistant
