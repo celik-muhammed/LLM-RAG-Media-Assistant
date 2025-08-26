@@ -1,0 +1,951 @@
+answer,id,question,relevance,explanation
+You should fill out the form with accurate information about the alleged infringement—providing all relevant details of the ownership issue so the support staff can assess it correctly.,946c3805,"After finding possible ownership issues, what do I need to include in my form for accurate assessment by support staff at iMedia Inc.?",RELEVANT,The answer directly states that you should include accurate details of the ownership issue in the form for proper assessment.
+"To report harmful or inappropriate material, follow these steps on our platform:
+
+1. **Go to the official website** – {{WEBSITE_URL}}.  
+2. **Locate the content** you want to flag.  
+3. **Click the {{REPORT_SECTION}} (usually shown as a {{FLAG_ICON}} icon) next to the material.**  
+4. **Select the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+5. **Choose the most appropriate reason** (e.g., “harmful/explicit content”) and, if needed, add any extra details.  
+6. **Submit the report.**  
+
+Your report will be reviewed securely by our moderation team, and appropriate action will be taken in line with our community standards.",07f2980a,"What specific actions should be taken if someone uploads harmful material online, and where can I report it safely and securely?",RELEVANT,The answer provides specific steps to report harmful material and indicates a safe reporting location via the platform's official website and moderation team.
+"To report explicit content on the MuzuMusic website, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the content you consider explicit.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the most appropriate reason for your report.  
+6. Add any additional comments or details if prompted, then submit the report.  
+
+The MuzuMusic team will review your submission and take the appropriate action.",04d6b0b5,How can I report explicit content on the MuzuMusic website?,RELEVANT,"The answer gives a step-by-step procedure for reporting explicit content on MuzuMusic, directly addressing the question."
+"To report explicit content on our platform, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you consider explicit.  
+3. Click on the {{REPORT_SECTION}} near the content (look for the {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the options presented.  
+5. Select the most appropriate reason for your report from the available choices.  
+6. Add any additional comments or details if prompted, then submit your report.  
+
+Our moderation team will review your report and take action according to our community standards.",d92b63c0,Please explain the steps I should take to report explicit content on your site.,RELEVANT,"The answer directly outlines the steps to report explicit content on the site, matching the question's request."
+You can flag the content by using the **Report** section that appears next to the item—typically shown as a **flag icon**. Click that icon and then choose the **“Report Inappropriate Content”** option from the menu.,d99c8318,"Where in the user interface can I find and select an option to flag unwelcome or disturbing content, like pornography, as improper?",RELEVANT,The answer directly explains where to find the flag/report option in the UI and how to select it for improper content.
+"To formally report the unauthorized use, please follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with all relevant details about the infringement.  
+5. Submit the completed form for our review.  
+
+Your report will be assessed and appropriate action will be taken in line with our policies.",49ee76d8,How do I formally alert about an unauthorized use of copyrighted material on your platform that I've come across recently in the videos section?,RELEVANT,"The answer provides a clear procedure for formally reporting unauthorized copyrighted material, directly addressing the user's request."
+"Yes. To report user‑generated text that may violate our conduct code:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific passage you want to report.  
+3. Click the **{{REPORT_SECTION}}** (shown as a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the dropdown menu.  
+5. Select the appropriate reason for the report and add any extra details if needed.  
+6. Submit the report.
+
+Our moderation team will review the submission and take action according to our community standards.",02518e44,Is there a way to report user-generated text passages that I believe do not comply with the acceptable conduct code?,RELEVANT,The answer directly explains how to report user‑generated text that may violate the conduct code.
+"To report harmful or inappropriate posts on the GHI media site, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific post that violates the community guidelines.  
+3. Click the **{{REPORT_SECTION}}** button (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, select **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Choose the reason that best matches the violation and, if needed, add any additional details.  
+6. Submit the report.
+
+Your submission will be reviewed by the moderation team, and appropriate action will be taken according to the community standards.",c7322fa4,I’ve noticed harmful posts that violate community guidelines; how do I submit a report through the GHI media site?,RELEVANT,"The answer provides step-by-step instructions on how to report harmful posts on the GHI media site, directly addressing the user's query."
+"To report the disturbing article, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific article you want to report.  
+3. Click the **{{REPORT_SECTION}}** (the **{{FLAG_ICON}}** icon) that appears next to the content.  
+4. From the menu, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the appropriate reason for the report from the list provided.  
+6. If needed, add any additional details, then submit the report.
+
+The moderation team will review your submission and act in accordance with our community standards.",3c7c1979,I encountered a disturbing article on your web content. What's the best procedure to ensure this gets addressed according to our community standards and reported properly in English as my main language option within the report section?,PARTLY_RELEVANT,"The answer outlines the reporting steps, which addresses the main request, but it does not explicitly mention selecting English in the report section."
+"To report sexually suggestive media shared by another user, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you want to report.  
+3. Click the {{REPORT_SECTION}} (usually a {{FLAG_ICON}} next to the content).  
+4. From the dropdown, choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}.  
+5. Select the reason that best matches the complaint (e.g., sexually suggestive content).  
+6. Add any additional details if needed, then submit the report.  
+
+Your report will be reviewed by our team and appropriate action will be taken.",3b95f06d,Where can I submit a complaint about sexually suggestive media shared by another user on our site?,RELEVANT,"The answer explains where and how to submit a complaint about sexually suggestive media, directly addressing the question."
+"To report a copyright issue, select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** (the “Report Copyright Infringement” option).  
+
+You’ll then be asked to fill out the required fields, providing all pertinent information about the alleged infringement (details of the content, location, parties involved, etc.) before submitting the form.",6a7ec48c,Which option should I select if my intention is to report copyright issues and what details are expected from me during this process?,RELEVANT,The answer directly states the option to select for reporting copyright issues and lists the expected details to provide.
+"To report a video you find offensive on VlogSpace, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the video you want to report.  
+3. Click the **{{REPORT_SECTION}}** (the flag icon) next to the video.  
+4. From the dropdown, choose **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Select the appropriate reason for the report from the list provided.  
+6. Add any extra information if needed, then submit the report.
+
+The moderation team will review your submission and take action according to VlogSpace’s community standards.",ed546a3b,I would like to know more about reporting videos that I find offensive. What is your procedure for this at VlogSpace?,RELEVANT,"The answer outlines the steps for reporting offensive videos on VlogSpace, directly addressing the requested procedure."
+"To report a copyright violation:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with accurate details about the infringement.  
+5. Submit the form for our review.",4b139cf9,How do I report a copyright violation on your website?,RELEVANT,The answer directly outlines the steps needed to report a copyright violation on the website.
+I don’t have that information.,0d94a91c,Could I contact the community managers directly to address content that goes against company policies on social media or other platforms we use?,NON_RELEVANT,The answer states lack of information and does not address whether one can contact community managers.
+"To report content that infringes your rights as a creator, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** choice.  
+4. Fill out the required fields, providing detailed information about the infringement.  
+5. Submit the completed form for review.",47af2f58,What are the steps to take when addressing content that infringes my rights as an individual content creator using your platform?,RELEVANT,"The answer directly lists the steps to report infringing content on the platform, addressing the question."
+You can report the content by clicking the **{{REPORT_SECTION}}**—the report button that appears right next to the item in question and is shown as a **{{FLAG_ICON}}**. This option is located directly adjacent to the content you wish to flag.,afe8266a,"Where exactly within the website or app interface is there a section where users are supposed to click in order to submit reports of bad content like sexually suggestive media, as per my understanding from one of your support materials?",RELEVANT,"The answer identifies the report button next to the content (flag icon) as the location to click, directly addressing the question."
+You should start by visiting the company’s official website — {{WEBSITE_URL}}.,3e980aab,I want to alert you about someone posting my original artwork without permission. On which webpage should I start reporting this issue?,PARTLY_RELEVANT,"The answer suggests starting at the company's website, which loosely addresses where to report, but it lacks the specific webpage needed for reporting the infringement."
+"To report that your child’s educational program has been pirated, follow these steps:
+
+1. Visit {{WEBSITE_URL}}.  
+2. Go to the {{COPYRIGHT_SECTION}} area.  
+3. Click the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}} link.  
+4. Fill in the required fields with the details of the piracy.  
+5. Submit the form.
+
+After you submit the report, our team will review the information you provided. The submission will be assessed, and appropriate actions will be taken in line with our policies.",1e254822,"Can you provide me with some guidance on how to follow through with my claim that our child's educational program has been pirated online? Specifically, I want information regarding who reviews these reports and what happens after submission.",RELEVANT,"The answer provides step-by-step guidance for reporting piracy and explains that the internal team reviews the report and takes appropriate actions, directly addressing who reviews and what happens after submission."
+"You can report offensive material directly on the site:
+
+1. Go to **{{WEBSITE_URL}}** and find the content you want to report.  
+2. Click the **{{REPORT_SECTION}}** (the {{FLAG_ICON}} flag icon) next to the item.  
+3. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** and select the reason for the report.  
+4. Provide any additional details requested and submit the report.  
+
+The moderation team will review your submission.",d10865a3,Where should I report offensive material on your site?,RELEVANT,The answer directly explains where and how to report offensive material on the site.
+"To report sexually explicit content on {{WEBSITE_URL}}, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the explicit content you want to report.  
+3. Click the {{REPORT_SECTION}} (usually near the content and shown by a {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the menu.  
+5. Select the reason that best matches the content from the provided options.  
+6. If prompted, add any additional details and submit your report.  
+
+Our team will review your submission and take appropriate action in line with our community standards.",3392f434,Please guide me through the process of reporting sexually explicit content from {{WEBSITE_URL}}.,RELEVANT,"The answer provides a step-by-step guide for reporting sexually explicit content on the specified website, directly addressing the question."
+"To report the potentially harassing dialogue, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific dialogue you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) near the content.  
+4. From the dropdown, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Select the reason that best matches the harassment issue.  
+6. If needed, add any extra details that can help the review team, then submit the report.  
+
+Our moderation team will review the submission and take appropriate action in line with our community standards.",8272a09d,I discovered potentially harassing dialogue; could you guide me through our content guideline compliance process?,RELEVANT,"The answer provides a step-by-step guide on how to report potentially harassing dialogue, directly addressing the compliance process request."
+"To report explicit content:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the content you consider explicit.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** (or “Report explicit content”).  
+5. Select the most appropriate reason and, if prompted, add any additional details.  
+6. Submit your report.
+
+Our team will review the submission and take action according to our community standards.",7139c20d,How do I report explicit content on your website?,RELEVANT,The answer directly provides step-by-step instructions on how to report explicit content on the website.
+"To report offensive or inappropriate material on our platform, follow these steps:
+
+1. **Visit** the website at **{{WEBSITE_URL}}**.  
+2. **Locate** the specific content you want to report.  
+3. **Click** the **{{REPORT_SECTION}}** (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the menu, select **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. **Choose** the most appropriate reason for your report from the list provided.  
+6. **Add** any extra details if needed, then **submit** the report.
+
+Our moderation team will review your submission and take the appropriate action in line with our community standards.",a98b5c92,"Can you guide me through the process of reporting offensive material available for viewing, so our user base can be protected from it?",RELEVANT,"The answer outlines step‑by‑step instructions for reporting offensive content, directly addressing the request for a reporting guide."
+"After you submit the report, our moderation team will review the case and take appropriate actions in line with our community standards.",4333143e,What actions will the support team take after I file a report about inappropriate ads?,RELEVANT,"The answer directly states that after filing a report, the moderation team will review the case and take appropriate actions, which addresses the question."
+"To report a video that appears harmful or offensive, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the video you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually a **{{FLAG_ICON}}**) next to the video.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the dropdown menu.  
+5. Select the reason that best describes why the content is inappropriate.  
+6. Add any extra details if needed, then submit the report.  
+
+Our team will review the submission and take action according to our community standards.",02518e44,What steps should I follow if a video uploaded by another user seems harmful or offensive and how do I submit such reports?,RELEVANT,"The answer outlines specific steps to report a harmful or offensive video, directly addressing the question."
+"Sure! To submit an online infringement complaint, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Click on the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** link.  
+4. Fill in the required fields with detailed information about the infringement.  
+5. Submit the completed form for review.",9177cec5,Could you guide me through submitting an infringement complaint form available online?,RELEVANT,"The answer provides a clear step-by-step guide on how to submit an online infringement complaint, directly addressing the request."
+"To file a report for content that depicts sexual activity, use the **report feature that appears next to the item**:
+
+1. Go to **{{WEBSITE_URL}}** and locate the specific piece of content you want to report.  
+2. Look for the **{{REPORT_SECTION}}** icon beside the content (it is shown as a **{{FLAG_ICON}}**).  
+3. Click the flag icon and, from the dropdown menu, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+4. When prompted, select the reason that best matches “sexual activity” from the list of provided reasons.  
+5. Add any additional information you think is relevant, then submit the report.
+
+The moderation team will review your submission and act according to the platform’s community standards.",6cef08d4,"Where exactly is there an option on your site for filing reports against sexual activity depicted, and how can I navigate using this feature?",RELEVANT,The answer explains where the reporting option is located (flag icon beside content) and provides step-by-step navigation for filing a report about sexual activity.
+"To add extra context when you report an offensive EntertainmentNow episode, follow these steps:
+
+1. Go to {{WEBSITE_URL}} and locate the series episode that made you uncomfortable.  
+2. Click the {{REPORT_SECTION}} (the {{FLAG_ICON}}) that appears next to the episode.  
+3. From the dropdown, choose {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}.  
+4. Select the most appropriate reason for your report.  
+5. In the “additional context” field, provide any details that explain why the content was offensive or disturbing (e.g., specific scenes, language, or impact on you).  
+6. Submit the report.
+
+Your detailed explanation will help the moderation team assess the content quickly and accurately.",3ffc3966,Could you explain how to detail additional context about reported offensive content next to EntertainmentNow series episode that made me uncomfortable?,RELEVANT,The answer directly explains how to add additional context when reporting offensive content for an EntertainmentNow episode.
+"To report a suspected copyright (intellectual‑property) violation on our site, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in all required details about the alleged infringement.  
+5. Submit the form.
+
+Your report will be reviewed, and we will take appropriate action according to our policies.",cefe7e6b,Can someone guide me through the process of alerting authorities within our site against instances where intellectual property seems violated based on available resources and information from your service policies directly addressing copyright infractions reporting procedures?,RELEVANT,"The answer provides a step‑by‑step guide for reporting suspected copyright violations on the site, directly addressing the request."
+"To report inappropriate material you’ve encountered, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the menu, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the reason that best matches the issue.  
+6. If needed, add any additional details, then submit the report.  
+
+Your submission will be reviewed by our moderation team and appropriate action will be taken.",b1b1e584,How can I submit a complaint about inappropriate material found during my browsing?,RELEVANT,"The answer outlines the steps to report inappropriate material, directly addressing how to submit a complaint."
+"To report inappropriate content you have encountered, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you wish to report.  
+3. Click the **{{REPORT_SECTION}}** area near the content (look for the **{{FLAG_ICON}}** symbol).  
+4. From the dropdown menu, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the most relevant reason for your report from the provided choices.  
+6. If needed, add any extra details that may help process your report, then submit it.  
+
+Your report will be reviewed by our team and appropriate action will be taken according to our community standards.",14c3073b,"I encountered something objectionable; what is the procedure for submitting a complaint on this site, please aid!",RELEVANT,"The answer outlines the steps to report objectionable content on the site, directly addressing the user's request for the complaint procedure."
+"To report inappropriate material you’ve encountered, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually found next to the content and marked with a **{{FLAG_ICON}}** icon).  
+4. From the menu, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the reason that best matches the issue from the provided list.  
+6. If needed, add any additional details and then submit your report.  
+
+Our team will review the submission and take appropriate action according to our community standards.",985a541d,Can you guide me through the reporting process for inappropriate material found on this site?,RELEVANT,"The answer provides a step‑by‑step guide on how to report inappropriate material, directly addressing the user's request."
+"To report very offensive or inappropriate content, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually near the content and shown as a **{{FLAG_ICON}}**).  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the dropdown menu.  
+5. Select the reason that best matches the issue from the provided list.  
+6. Add any extra details if needed, then submit the report.  
+
+Our moderation team will review your submission and act according to our community standards.",1b326049,What steps should I follow to report something that is very offensive and inappropriate on this internet community?,RELEVANT,"The answer gives a clear step-by-step procedure for reporting offensive and inappropriate content, directly addressing the question."
+I don’t have that information.,7de19bdb,What steps should I take to submit a complaint about inappropriate material on the site?,NON_RELEVANT,The answer does not provide any steps or information about submitting a complaint; it merely states lack of information.
+"To report a potential copyright infringement, start by:
+
+1. Visiting our website at **{{WEBSITE_URL}}**.  
+2. Going to the **{{CONTACT_US_SECTION}}** (or the **{{COPYRIGHT_SECTION}}**) on the site.  
+3. Selecting the option to **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** or to connect with a customer‑service representative.  
+4. Filling out the required information about the alleged infringement and submitting the form.  
+
+This will initiate the review process according to our policy.",1c707d91,I want to ensure a copyrighted piece isn't being improperly shared—where do I start with your service policy for this issue?,RELEVANT,The answer directly outlines how to begin addressing copyright concerns by directing the user to the service's reporting process.
+"Choosing a specific reason from the list of options signals to our moderation team the exact nature of the problem you’re reporting. It tells us why you consider the post inappropriate, which helps the team assess the content and take the appropriate action in line with our community standards.",d1704b68,What does my choice among different options imply when submitting feedback regarding inappropriate posts on your media site?,RELEVANT,The answer directly explains what selecting a specific option conveys to the moderation team when reporting inappropriate content.
+"To add extra information when you tag a user’s action as misconduct, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}** and locate the content or action you want to report.  
+2. Click the **{{FLAG_ICON}}** (the report/flag button) that appears next to it.  
+3. Choose the appropriate reporting option (e.g., **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**).  
+4. When the reporting form appears, you’ll see a field for **additional context or details**.  
+5. Enter any extra information you want to provide in that field.  
+6. Submit the report.
+
+Your added details will be reviewed by the moderation team as part of the report.",08df1d46,How do I submit additional information or context when tagging someone’s actions as misconduct on the digital media site?,RELEVANT,The answer directly describes how to provide additional context when reporting misconduct on the site.
+Your first step is to visit our website at {{WEBSITE_URL}}.,0fe9444c,What should be my first step to submit a report about inappropriate material I've found online with you?,RELEVANT,"The answer directly tells the user the first step to submit a report, which is to visit the website."
+"Users can report misconduct directly on the site by:
+
+1. Going to the website ({{WEBSITE_URL}}).  
+2. Finding the content they want to flag.  
+3. Clicking the **{{REPORT_SECTION}}**—usually displayed next to the content as a **{{FLAG_ICON}}**.  
+4. Choosing the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the dropdown and completing the report form.  
+
+The review team will then assess the submission.",286cb53a,Could you explain where within your site users can officially report misconduct they encounter?,RELEVANT,"The answer directly describes where and how users can report misconduct on the site, matching the question."
+I don’t have that information.,c1eb2c2b,What are the steps and options available for reporting unsuitable videos when they appear during playback on your proprietary media devices or streaming service?,NON_RELEVANT,The answer does not provide any steps or options for reporting unsuitable videos; it merely states lack of information.
+I don’t have that information.,f634cfdf,"Could you inform me about any possible procedures to follow if my intellectual property, available language {LANGUAGE_OPTION}, is being used without my consent and proper credit on platform {{WEBSITE_URL}}?",NON_RELEVANT,The answer states a lack of information and does not provide any procedures or guidance related to the question.
+"To report the content right away, follow these steps:
+
+1. Go to our official website ( {{WEBSITE_URL}} ).  
+2. Locate the **{{INAPPROPRIATE_CONTENT_SECTION}}** (or the report section next to the item, shown by the **{{FLAG_ICON}}**).  
+3. Click the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+4. Fill in the requested details about the material and submit the form.  
+
+Your report will be reviewed promptly by our moderation team.",1c60b4fa,I accidentally found material that may not be suitable for our audience; where should I send my concerns regarding this content right now?,RELEVANT,"The answer tells the user how and where to report the inappropriate material, directly addressing where to send concerns."
+"You can submit a report for disrespectful (inappropriate) content by following these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) next to the content.  
+4. Select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the dropdown menu.  
+5. Choose the reason that best describes the disrespectful content and add any additional details if needed.  
+6. Submit the report.
+
+The moderation team will review your submission and take action according to the community standards.",dcc2ed69,Where can I find information on submitting reports for disrespectful content posted by others?,RELEVANT,"The answer gives direct instructions on how to submit a report for disrespectful content, addressing the question."
+"To report the inappropriate forum thread, please follow this protocol:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you wish to report.  
+3. Click on the **{{REPORT_SECTION}}** area (often shown next to the content as a **{{FLAG_ICON}}**).  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the drop‑down menu.  
+5. Select the reason that best describes the issue (e.g., promotion of harmful behavior to youth).  
+6. If needed, add any additional details and then submit your report.
+
+Our team will review the submission and take appropriate action according to our community standards.",9e96080e,I came across an online forum's thread hosted on your website promoting harmful behavior amongst youth audiences; what protocol should I follow for reporting it?,RELEVANT,"The answer directly outlines the steps to report the harmful forum thread, matching the requested reporting protocol."
+"To notify us of possible copyright infringement, follow these steps:
+
+1. Go to our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** page.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** link.  
+4. Fill out the form with all required details about the infringement.  
+5. Submit the completed form for our review.",a1d37ccc,What are the steps to notify about possible copyright infringement on my media content?,RELEVANT,"The answer outlines step‑by‑step instructions for notifying about possible copyright infringement, directly addressing the question."
+"After you submit the report, our team will promptly review it and take the appropriate action in line with our established copyright policies.",a42f9c3d,"Once my submission is complete, how will you respond or take action regarding the reported copyright issue on our site for your language?",RELEVANT,"The answer directly explains the response process after submission, matching the question about how action will be taken."
+"To report the video footage, follow these steps:
+
+1. Visit {{WEBSITE_URL}}.  
+2. Locate the specific video you want to report.  
+3. Click the {{REPORT_SECTION}} link (usually shown next to the content as a {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the menu.  
+5. Select the reason that best matches the issue and add any extra details you think are helpful.  
+6. Submit the report.  
+
+The moderation team will review your submission and take appropriate action.",a93d2530,I want to notify the team that some video footage includes unautdependent elements; what steps should I take for reporting it here?,RELEVANT,"The answer gives clear step-by-step instructions for reporting video footage, directly addressing the question."
+"To report offensive or inappropriate content, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the menu, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the most appropriate reason for your report from the list provided.  
+6. If needed, add any extra details, then submit the report.
+
+Our moderation team will review your submission and take action according to our community standards.",46728d3b,Can someone guide me on how to report content they found offensive?,RELEVANT,"The answer provides step-by-step instructions on how to report offensive content, directly addressing the user's request."
+"To report inappropriate material you should:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the content you want to flag.  
+3. Click the {{REPORT_SECTION}} near the content (marked by a {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the menu.  
+5. Select the reason that best matches the issue.  
+6. If prompted, add any extra details that help explain the problem, then submit the report.
+
+After you click “Report,” you must provide the reason for the report and any supplementary information required before final submission. Our moderation team will review your submission and act according to our community standards.",0c8ceeb5,"Can you provide details on how to submit a report for inappropriate material found during my browsing, and what is required from me after clicking 'Report'?",RELEVANT,"The answer gives a detailed process for submitting a report and specifies what information is needed after clicking 'Report', directly addressing the question."
+"To report a copyright‑infringement issue, follow these steps:
+
+1. Go to our website ({{WEBSITE_URL}}).  
+2. Open the {{COPYRIGHT_SECTION}} area.  
+3. Select the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}.  
+4. Fill in the required fields with detailed information about the unauthorized use.  
+5. Submit the form.
+
+Your report will be reviewed, and we’ll take the appropriate action in line with our policies.",c0a6a331,How do I escalate an issue if someone is using copyrighted material without permission?,RELEVANT,The answer provides specific steps to report and thus escalate a copyright infringement issue.
+"After you submit the accusation, your report is reviewed and assessed by our team. We then take the appropriate actions required, in accordance with our copyright‑infringement policies and established procedures.",c3c92293,What actions are taken after I submit an accusation against suspected copyright infringement on your site's official channel for complaints and corrections?,PARTLY_RELEVANT,"The answer mentions that the report is reviewed and actions are taken, but it does not detail the specific steps taken after the accusation."
+You can find that information in the **Contact Us** section.,d14dde34,In which section do I find information on how to properly submit evidence when reporting content that breaches intellectual property rights as per my media device's display language settings?,RELEVANT,The answer directly provides a section name in response to the question about where to find the information.
+"After you submit a report, our moderation team will review the notification, investigate the content, and then take appropriate action in line with our community standards.",67baec9c,"Once I report content, how will your team handle it and what actions might they take?",RELEVANT,The answer directly explains the moderation process after a report and mentions actions taken according to community standards.
+"Users can report non‑compliant or explicit media by following these steps:
+
+1. Visit the company’s website (**{{WEBSITE_URL}}**).  
+2. Locate the content they consider non‑compliant or explicit.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** (or the explicit‑content specific option).  
+5. Select the most appropriate reason for the report from the list provided.  
+6. Provide any additional comments or supplementary details required in the form, then submit the report.
+
+Including a clear reason and any extra details helps the team conduct a thorough investigation and take appropriate action.",2bd4ae22,How can users report non-compliant or explicit media and what details should they provide for a thorough investigation?,RELEVANT,The answer directly outlines how users can report non‑compliant or explicit media and specifies providing clear reasons and additional details for investigation.
+"To have a suspicious article reviewed by the moderation team:
+
+1. Go to the {{WEBSITE_URL}}.  
+2. Locate the article and click the {{FLAG_ICON}} or the nearby {{REPORT_SECTION}}.  
+3. From the dropdown, select {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}.  
+4. Choose the reason that best matches the issue and fill in any required details.  
+5. Submit the report.
+
+The moderation team will then examine the submission and take appropriate action in line with community standards.",4d531800,"Once a suspicious article needs highlighting, how does one proceed within your digital environment for it to be addressed properly and ethically by the moderation team?",RELEVANT,"The answer outlines the exact steps to flag a suspicious article for moderation, directly addressing how to proceed ethically."
+"To submit a complaint about sexually explicit material online, follow these steps:
+
+1. Go to the company’s website ({{WEBSITE_URL}}).  
+2. Navigate to the **{{EXPLICIT_CONTENT_SECTION}}** section.  
+3. Choose the **{{REPORT_EXPLICIT_CONTENT_OPTION}}** option.  
+4. Complete the form with all relevant details about the explicit content.  
+5. Submit the report for investigation.",d8906304,What steps should be taken to submit a complaint about sexually explicit material online?,PARTLY_RELEVANT,"The answer outlines general steps for reporting sexually explicit material, but uses placeholder tokens instead of specific actionable information, making it only partially relevant."
+I don’t have that information.,dc9097b0,Can someone assist me in understanding the procedure required when a creative work is used unlawfully without credit or authorization?,NON_RELEVANT,The response states a lack of information and does not address the procedure for handling unauthorized use of a creative work.
+I don’t have that information.,3f3d1f47,"If an advertisement seems misleading and thus infringes on my expectations as a user within your app/website interface design choices, who should I contact for filing such feedback?",NON_RELEVANT,"The answer does not provide any information about who to contact, which is the request."
+"Inappropriate material can be reported directly on the platform’s website.
+
+**How to report it:**
+
+1. Go to the site ( {{WEBSITE_URL}} ).  
+2. Locate the specific content you want to flag.  
+3. Click the **{{REPORT_SECTION}}** button next to it (look for the **{{FLAG_ICON}}**).  
+4. From the dropdown, choose **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Select the appropriate reason for the report from the list.  
+6. If needed, add any extra details, then submit the report.
+
+The moderation team will review your submission and act according to the community standards.",a0fe07bf,If there's inappropriate material on the website I frequent using a media streaming platform—where can it be reported and what steps are involved?,RELEVANT,"The answer directly outlines where to report inappropriate material (on the platform's site) and provides step-by-step instructions, matching the question."
+"To report material that violates our community guidelines, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Find the **{{REPORT_SECTION}}** next to the content (look for the **{{FLAG_ICON}}**).  
+4. Click the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+5. Choose the reason that best matches the violation.  
+6. Add any extra details if needed, then submit the report.
+
+Our team will review your submission and take appropriate action in line with our community standards.",0375acf7,"If I encounter material that violates our community guidelines during browsing the site, how can I report it effectively according to your procedures?",RELEVANT,"The answer outlines the step-by-step procedure for reporting guideline‑violating material, directly addressing the question."
+You should go to the **Copyright section** of the website.,0e83f98c,What specific section of the website should I visit to start filing a copyright infringement complaint?,RELEVANT,The answer directly identifies the specific website section (the Copyright section) to start filing a complaint.
+"After you submit your claim with the supporting evidence in the dispute‑resolution section, our team will evaluate the details of your report—including the nature of the alleged infringement and the evidence you provided. Based on that assessment, we will take actions in accordance with our established policies, which may include removing the infringing material or implementing other remedial measures as required.",be6da7e1,"What are you going to evaluate and what actions will your review likely lead to after reporting a foul use of intellectual property rights on this site, based on my claim with evidence provided in dispute resolution section?",RELEVANT,The answer directly describes what will be evaluated (the claim details and evidence) and the possible actions (removal of infringing material or other remedial steps).
+"To submit a copyright‑infringement notice, follow these steps:
+
+1. Go to our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill out the required fields with detailed information about the unauthorized distribution of your videos.  
+5. Submit the completed form for our review.  
+
+Your report will be assessed and appropriate action will be taken in line with our policies.",1e254822,I suspect someone is unlawfully distributing the videos we produced for our language learning platform. Could you tell me more about submitting a copyright infringement notice on your site through an interactive guide or form step-by-step?,RELEVANT,"The answer provides a step-by-step guide for submitting a copyright infringement notice, directly addressing the user's request."
+I don’t have that information.,fba65cab,"I need directions, but I am currently not near a computer. What alternative methods can I employ immediately on my smartphone and language preference Spanish at (321) XX-XXXX for reporting copyright issues?",NON_RELEVANT,The answer does not provide any directions or alternative methods for reporting copyright issues on a smartphone in Spanish.
+"To report inappropriate content you’ve encountered in your teenager’s gameplay area, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you want to report.  
+3. Click the {{REPORT_SECTION}} next to the content (look for the {{FLAG_ICON}}).  
+4. From the menu, choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}.  
+5. Select the reason that best fits the issue.  
+6. Add any extra details if needed, then submit the report.  
+
+Our team will review your submission and take action according to our community standards.",5750630c,Can you provide guidance on filing a complaint about inappropriate content for my teenager's gameplay area?,RELEVANT,"The answer provides step-by-step guidance on how to file a complaint about inappropriate content, directly addressing the user's request."
+"To handle cases such as plagiarism, you can submit a copyright‑infringement report by following these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** section.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with details about the alleged plagiarism.  
+5. Submit the form for our review.
+
+Your report will be evaluated, and appropriate actions will be taken according to our policies.",a55aaf81,"As someone with concerns about intellectual property rights, I want to understand how you address instances like plagiarism.",RELEVANT,"The answer explains how to report plagiarism, directly addressing how the system handles intellectual property concerns."
+"Sure! Here’s how you can report an interactive tutorial video that contains mature humor not suitable for all ages:
+
+1. **Go to the website** – open {{WEBSITE_URL}}.  
+2. **Locate the video** – find the specific tutorial video you want to report.  
+3. **Open the reporting area** – click the {{REPORT_SECTION}} option that appears near the video (you’ll see a {{FLAG_ICON}}).  
+4. **Select the report type** – from the dropdown menu, choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} option.  
+5. **Choose a reason** – pick the reason that best matches the mature humor issue from the provided list.  
+6. **Add details (if needed)** – include any extra information that can help the moderation team understand the problem.  
+7. **Submit** – send your report.
+
+The moderation team will review the submission and take appropriate action according to the community standards.",c628ef02,"Could you guide me through the process step by step, starting when an interactive tutorial video is found containing mature humor not suitable for all ages?",RELEVANT,"The answer provides a clear step‑by‑step guide for handling an interactive tutorial video with mature humor, directly addressing the requested process."
+I don’t have that information.,5b52f0ec,'Deny unauthorised content' or 'flag policy breach'. Both terms mean similar things as per what our FAQ mentioned. Can you clarify these for me just so that we are on the same page about reporting copyright violations at Media Domain and how exactly to do it from forms?,NON_RELEVANT,"The answer provides no clarification or instructions about the terms or reporting process, failing to address the question."
+"Yes. You can report potentially offensive material by following these steps:
+
+1. Visit our website ({{WEBSITE_URL}}).  
+2. Locate the content you want to report.  
+3. Click the {{REPORT_SECTION}} next to it (shown by a {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the menu.  
+5. Select the appropriate reason and add any extra details if needed.  
+6. Submit the report.
+
+Our moderation team will review the submission and take action according to our community standards.",74d54826,"Is there a way I can notify you about potentially offensive material found within your online environment, and if so, how do I make such an request?",RELEVANT,"The answer directly explains how to report offensive material, addressing the request for notification steps."
+"To report explicit content:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the content you consider explicit.  
+3. Click the **{{REPORT_SECTION}}** (usually a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the most appropriate reason for your report.  
+6. Add any additional comments if required and submit the report.  
+
+Our team will review the submission and take action according to our community standards.",f495240f,How can I report explicit content on your website?,RELEVANT,"The answer directly outlines how to report explicit content on the website, matching the question."
+"To report the graphic material you’ve encountered, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, select **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Choose the reason that best matches the issue from the available options.  
+6. If needed, add any additional details, then submit your report.  
+
+Our moderation team will review the report and take action according to our community standards.",43def3ca,I recently encountered graphic material online. Can you guide me through reporting this to align with standards here?,RELEVANT,"The answer provides a clear step-by-step guide for reporting graphic material, directly addressing the user's request."
+I don’t have that information.,ed546a3b,"As someone bilingual who uses both English and Español on SocialPixel, how do I report content in two languages when necessary?",NON_RELEVANT,The answer states lack of information and does not provide any guidance on reporting bilingual content.
+"To report an unauthorized use of your work, follow these steps:
+
+1. **Visit the help‑center website** – go to **{{WEBSITE_URL}}**.  
+2. **Find the “Contact Us” section** on the site ({{CONTACT_US_SECTION}}).  
+3. **Select the option to talk with a customer‑service representative** (or “engage with a human representative”).  
+4. **Fill in the required information** about the copyright infringement and submit your inquiry.
+
+A live representative will then review your report and guide you through the next steps. If you need any further assistance, just let us know.",1c9dfd9e,"I think there has been an unauthorized use of my work; what do I need to do at your help center web address regarding copyright infringement reporting, please clarify the process with a live representative if needed.",RELEVANT,"The answer directly outlines the steps to report copyright infringement via the help center and mentions contacting a live representative, matching the user's request."
+"To report a copyright violation, follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with accurate information about the infringement.  
+5. Submit the form for our evaluation.",6a7ec48c,How do I report a copyright violation on this platform?,RELEVANT,"The answer provides a step-by-step process for reporting a copyright violation, directly addressing the question."
+"To report potential content copying, follow these steps:
+
+1. Access our official website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Locate and select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required details about the alleged infringement.  
+5. Submit your report for evaluation.",67b9b747,What are the steps involved in reporting potential content copying?,RELEVANT,"The answer lists step-by-step instructions for reporting potential content copying, directly addressing the question."
+"To report a copyright violation, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill out the required fields with accurate details about the infringement.  
+5. Submit the form for our evaluation.  
+
+Your report will be reviewed and appropriate action will be taken.",1d34371a,I just noticed a copyrighted material being used without permission on your website. What steps should I follow to report this violation?,RELEVANT,"The answer directly outlines the steps to report a copyright violation, matching the user's request."
+"To report content you believe is inappropriate, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you want to report.  
+3. Click the {{REPORT_SECTION}} (usually marked by a {{FLAG_ICON}}) next to the content.  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the dropdown menu.  
+5. Select the most appropriate reason for your report.  
+6. Add any additional details if needed, then submit the report.  
+
+Our moderation team will review the report and take action in line with our community standards.",dcc2ed69,I need assistance on how to report content I believe is inappropriate.,RELEVANT,"The answer provides step-by-step instructions on how to report inappropriate content, directly addressing the user's request."
+"After you submit the report, our team will review it and take the appropriate actions in accordance with our policies.",40a55abd,What happens after submitting the report regarding alleged copyright violations?,RELEVANT,"The answer directly describes the post‑submission process (team review and appropriate actions), which addresses the question."
+I don’t have that information.,521e7904,"If we're discussing rights enforcement on your multimedia platform, what are the protocols surrounding communication and submitting a copyright infringement case – specifically regarding personal interaction without automated systems?",NON_RELEVANT,The answer states a lack of information and does not provide any details about the communication protocols or submission process.
+"To submit a complaint about inappropriate content (including sensitive topics such as sexuality and gender diversity), follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually near the content and marked by a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the reason that best matches the issue from the list provided.  
+6. Add any additional details if needed, then submit the report.
+
+Our team will review your submission and take action according to our community standards.",e8e51c8a,"Could you guide me through the process to submit a complaint about content deemed inappropriate for users like me, especially regarding sensitive topics related to sexuality and gender diversity?",RELEVANT,"The answer gives a step-by-step guide for submitting a complaint about inappropriate content, specifically mentioning sensitive topics like sexuality and gender diversity, directly addressing the question."
+"Yes. When you report a potential copyright infringement, you should fill out the copyright‑infringement form on our website and provide all required details about the infringing content. This includes the relevant information needed to describe the infringement before submitting your notification.",521e7904,Is there specific information I need to provide when reporting potential copyright infringement online with Media content?,PARTLY_RELEVANT,"The answer acknowledges that specific details are required but does not list the particular information needed, providing only a generic suggestion."
+"To submit an official complaint about unauthorized use of your content, follow these steps:
+
+1. Visit the Media domain’s website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** section.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option (often labeled “Report Infringement” or similar).  
+4. Fill out the required fields with details about the infringing content (e.g., URLs, description of your original work, proof of ownership).  
+5. Submit the completed form for review.  
+
+Your complaint will be evaluated and appropriate action will be taken according to the site’s guidelines.",81e0b888,"What specific steps should be taken to submit an official complaint about someone posting my content without permission in Media domain's website, as mentioned at their {{WEBSITE_URL}} under Copyright Section and Report Infringement option for Content I own but see elsewhere, according to our procedures?",RELEVANT,"The answer directly outlines the specific steps to file an official complaint via the website's copyright and report infringement sections, matching the question's request."
+"To report offensive or unsuitable content, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (typically near the content and marked by a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, select **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Choose the most appropriate reason for your report from the provided options.  
+6. If needed, add any additional details and submit the report.  
+
+The report will be reviewed by our team and appropriate action will be taken according to our community standards.",1222c7a7,What steps must be taken if someone finds offensive or unsuitable content hosted by us that they wish to report for removal?,RELEVANT,The answer directly outlines the required steps for reporting offensive or unsuitable content.
+I don’t have that information.,941580d3,"Considering I find some content potentially biased towards a specific demographic, what is the procedure on your site to raise this concern without directly impacting their freedom of speech and expression rights?",NON_RELEVANT,The answer states a lack of information and does not address the procedure for raising concerns about biased content.
+"To report an alleged intellectual‑property breach, follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with complete details about the alleged breach.  
+5. Submit the report.
+
+After submission, our team will review the information and take appropriate action in accordance with our policies.",9147c9fe,What is the process for reporting alleged intellectual property rights breaches that have occurred within my uploaded material?,RELEVANT,"The answer outlines the step-by-step procedure for reporting alleged intellectual property breaches, directly addressing the question."
+"To report a copyright violation:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required details about the infringement.  
+5. Submit the form for our review.",3d3e9549,How can I report a copyright violation on your website?,RELEVANT,"The answer gives a clear, step-by-step procedure for reporting a copyright violation on the website."
+"To submit a report of unauthorized use of your copyrighted material, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with detailed information about the infringement.  
+5. Submit the completed form for our assessment.  
+
+Your report will be reviewed and we will take the appropriate actions in line with our policies.",5d826762,Can you guide me through the process of submitting an accusation against unautnered use of my copyrighted material here?,RELEVANT,"The answer provides a step‑by‑step guide for reporting unauthorized use, directly addressing the user's request."
+"To report a copyright violation, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with accurate details about the infringement.  
+5. Submit the completed form for our evaluation.",580f933e,What are the steps to report a copyright violation on your site?,RELEVANT,"The answer outlines a step-by-step process for reporting a copyright violation, directly addressing the question."
+"A copyright‑infringement report requires you to provide the details of the alleged violation so our team can evaluate it. To submit the report effectively:
+
+1. Go to our website ({{WEBSITE_URL}}).  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** link.  
+4. Fill in the form with accurate information about the infringement (e.g., the content involved, why you believe it infringes, any supporting evidence).  
+5. Submit the form.
+
+Your report will be reviewed, and we’ll take appropriate action in line with our policies.",8b0e2c62,What does the report of copyright infringement entail and how do I submit such information effectively on your platform?,RELEVANT,The answer explains what information a copyright infringement report should contain and gives step-by-step instructions for submitting it on the platform.
+"**Steps to report inappropriate material linked to your site**
+
+1. **Go to the site** – open {{WEBSITE_URL}}.  
+2. **Find the exact piece of content** you want to flag.  
+3. **Click the flag icon** ({{FLAG_ICON}}) that appears next to the content – this opens the **Report** section.  
+4. **Choose the “Report Inappropriate Content” option** ({{REPORT_INAPPROPRIATE_CONTENT_OPTION}}) from the dropdown menu.  
+5. **Select the most appropriate reason** for the report from the list provided.  
+6. **Add any extra details** that can help the moderation team understand the issue.  
+7. **Submit the report**.
+
+The moderation team will review your submission and act in accordance with the company’s community standards.
+
+---
+
+**Natural‑language example you could use when filling the form**
+
+*“I am reporting this article because it contains graphic sexual imagery that violates the platform’s policy on explicit content. Please review and remove it if it is found to be non‑compliant.”*
+
+*Note:* Your personal cultural or regional standards may differ from the company’s guidelines, but the report should reference the platform’s stated policies (i.e., “violates the platform’s policy on explicit content”) so the moderation team can evaluate it against the official community standards.",2ad1d824,"What steps do I need to follow if there's inappropriate material online associated with our site and how should it be reported using natural language examples, considering community standards for my culture or background may differ from those established by the company.",RELEVANT,"The answer gives explicit reporting steps, natural‑language example text, and notes how personal cultural standards relate to the company's policies, fully addressing the question."
+"To report offensive or inappropriate content while maintaining a professional tone, follow these steps:
+
+1. **Visit the website** – Go to {{WEBSITE_URL}}.  
+2. **Navigate to the appropriate section** – Open the {{INAPPROPRIATE_CONTENT_SECTION}} (or the {{EXPLICIT_CONTENT_SECTION}}) page.  
+3. **Select the reporting option** – Click the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} button (often shown with a {{FLAG_ICON}} near the content).  
+4. **Complete the report form** – Provide all required details about the content, describing the issue clearly and without using profanity or explicit language.  
+5. **Submit the report** – Send the form for our team’s review.
+
+Your report will be evaluated according to our established guidelines, and appropriate action will be taken.",17c18adc,"Can someone help me with guidelines to report something offensive on your website, without using explicit language at all times during communication? (keeping a professional tone)",RELEVANT,"The answer provides clear, step-by-step guidelines for reporting offensive content while maintaining a professional tone, directly addressing the request."
+"To report a post that you believe infringes someone’s copyright, use the platform’s reporting feature:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the post in question.  
+3. Click the {{REPORT_SECTION}} (the {{FLAG_ICON}}) next to the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+5. Select the reason that corresponds to copyright infringement (or “Intellectual‑property violation” if listed) and add any details you have.  
+6. Submit the report.
+
+Our moderation team will review the submission and take appropriate action.",f9cd1c01,I come across a post that seemingly violates someone's copyright; what is our channel for lodging such complaints?,RELEVANT,The answer explains the proper channel (the platform's reporting feature) and provides steps to lodge a copyright complaint.
+You need to select the **Report Copyright Infringement** option.,d37e24c5,What do I need to select when reporting an infringement of rights online within the media sector?,RELEVANT,"The answer directly states which option to select when reporting a rights infringement, matching the question."
+"To report offensive (inappropriate) content, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Find the specific content you want to report.  
+3. Click the {{REPORT_SECTION}} near the content (look for the {{FLAG_ICON}}).  
+4. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the drop‑down menu.  
+5. Select the reason that best matches the offensive content and add any extra details if needed.  
+6. Submit the report.
+
+Our team will review your notification and take appropriate action.",821a0af5,How do I submit a notification about offensive content?,RELEVANT,"The answer provides a step‑by‑step process for reporting offensive content, directly addressing how to submit such a notification."
+"To report copyright infringement, please follow these steps:
+
+1. Go to our official website at {{WEBSITE_URL}}.  
+2. Locate the {{COPYRIGHT_SECTION}} section.  
+3. Click on the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}} option.  
+4. Fill in the required details about the infringement in the form.  
+5. Submit the report for review.",335478c4,How can I report copyright infringement on your website?,RELEVANT,"The answer gives step-by-step instructions for reporting copyright infringement on the website, directly addressing the question."
+"To submit a copyright‑infringement report, follow these steps:
+
+1. Go to our official website at **{{WEBSITE_URL}}**.  
+2. Locate the section labeled **{{COPYRIGHT_SECTION}}**.  
+3. Click the option for **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}**.  
+4. Fill in the required details about the infringement in the provided form.  
+5. Submit the report for review.",1d7a770d,How can I submit a copyright infringement report on your platform?,RELEVANT,"The answer outlines the steps needed to submit a copyright infringement report, directly addressing the question."
+"To report explicit content, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (look for the **{{FLAG_ICON}}**) near the content.  
+4. From the menu, choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the appropriate reason for your report from the provided choices.  
+6. If needed, add any extra details that can help our team review the report, then submit it.
+
+Our moderation team will review your submission and take the appropriate action in line with our community standards.",afe8266a,I've come across explicit content on the platform and want to report it. Could you guide me through how I can do this effectively?,RELEVANT,"The answer directly provides a step-by-step guide on how to report explicit content, addressing the user's request."
+"To report inappropriate material on our platform, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Open the **{{REPORT_SECTION}}** (usually found next to the content and marked with a **{{FLAG_ICON}}**).  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+5. Select the reason that best matches the issue from the provided options.  
+6. If needed, add any additional details that could help our review team, then submit the report.  
+
+Our team will review the submission and take appropriate action according to our community standards.",3eebb726,Could you guide me through the process of reporting inappropriate material available to all users regardless of their preferences or devices being used?,RELEVANT,"The answer provides a step-by-step guide for reporting inappropriate material, directly addressing the request for instructions on the reporting process."
+"Yes. On the official website you can report copyright misuse by:
+
+1. Visiting the site ({{WEBSITE_URL}}).  
+2. Going to the {{COPYRIGHT_SECTION}} area.  
+3. Selecting the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}} link.  
+4. Filling out the required fields with details of the alleged infringement.  
+5. Submitting the form for review.",be686af9,Is there a system in place on the official website where I can report allegations of copyright misuse following our guidelines?,RELEVANT,"The answer confirms a reporting system exists and outlines how to use it, directly addressing the question."
+"Yes. You can report the unauthorized sharing through the online form on our website:
+
+1. Visit {{WEBSITE_URL}}.  
+2. Go to the {{COPYRIGHT_SECTION}}.  
+3. Select the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}.  
+4. Fill in the required details about the infringement and submit the form.",2d8aa64a,Is there an online form or interface where I can provide details of the unautherized sharing that breaches copyright law?,RELEVANT,The answer directly confirms the existence of an online form and outlines how to access and use it to report unauthorized sharing.
+"To report inappropriate content on our platform, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you wish to report.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) next to the content.  
+4. From the dropdown menu, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the reason that best matches the issue from the provided list.  
+6. Add any additional details that may help our review, then submit the report.  
+
+Our team will review your submission and take appropriate action according to our community standards.",d10865a3,Can you guide me through the process of reporting inappropriate content online?,RELEVANT,"The answer provides a step-by-step guide on how to report inappropriate content, directly addressing the user's request."
+"To notify us of an unlawful use of content, follow these steps:
+
+1. Access our official website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** page.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill out the form with all required details about the infringement.  
+5. Submit the completed form for our review.",36cbb626,What is the process to notify someone of an unlawful use of content here at Media domain?,RELEVANT,"The answer provides a step-by-step process for reporting unlawful content use, directly addressing the question."
+"If you see media that violates the platform’s social‑norm standards, you can flag it by:
+
+1. Going to the site ({{WEBSITE_URL}}).  
+2. Locating the content and clicking the **{{REPORT_SECTION}}** button (marked with a **{{FLAG_ICON}}**).  
+3. Choosing the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+4. Picking the most appropriate reason for the report from the dropdown list of provided reasons.  
+5. (Optional) Adding any extra details that may help the review team.  
+6. Submitting the report.
+
+The dropdown list gives you the specific reasons to select, ensuring your report is categorized correctly for review.",12bd7921,"What are my options if I encounter a piece of media on your site that doesn't comply with our shared social norms and you need to flag this for review using provided reasons from their dropdown choices, as suggested in the user instructions documentation available at www.examplecontentplatform.com/report?",RELEVANT,"The answer directly explains how to flag non‑compliant media using the dropdown reasons, matching the question's request."
+"To report inappropriate material on our website, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to report.  
+3. Click the **{{REPORT_SECTION}}** (usually found next to the content and marked with a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, choose **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Select the reason that best fits your complaint and, if needed, add any extra details.  
+6. Submit the report.
+
+Your submission will be reviewed by our team and handled according to our community standards.",64414782,Can you guide me through the process of submitting a complaint about inappropriate material found during my use of your website?,RELEVANT,"The answer gives a step-by-step guide for reporting inappropriate material, directly addressing the user's request."
+"To address content that violates your community standards, follow these steps:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Locate the specific content you want to address.  
+3. Click the **{{REPORT_SECTION}}** (usually shown next to the content as a **{{FLAG_ICON}}**).  
+4. From the dropdown, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}**.  
+5. Choose the reason that best matches the violation.  
+6. If needed, provide additional details, then submit the report.  
+
+Your review team will evaluate the submission and take appropriate action in line with the community standards.",2bd4ae22,What are the steps to take if someone posts content that doesn't comply with community standards on my platform?,RELEVANT,"The answer directly lists practical steps for handling non‑compliant content, matching the question."
+"After reporting a piece of content on your Android device, you should start by opening the platform’s website ({{WEBSITE_URL}}). From there you can locate the content, tap the {{REPORT_SECTION}} (e.g., the {{FLAG_ICON}}), choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}}, and follow the remaining steps.",29506ac4,"After I report a piece of content on my device running Android as the operating system, where do I start?",RELEVANT,The answer directly addresses where to start after reporting content by instructing to open the platform's website.
+"When you submit a copyright‑infringement report, you’ll need to fill out the online form on our website and provide the details requested there (e.g., information about the alleged infringement). The specific documentation or additional information required is outlined in that form.",6ef0c742,Is there specific information or documentation required when reporting suspected unauthorized use of copyrighted material through your service?,RELEVANT,"The answer directly states that required information and documentation are specified in the online report form, fully addressing the question."
+"To flag and submit a concern about content suitability, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you believe is unsuitable.  
+3. Click the {{FLAG_ICON}} (the report section) near the content.  
+4. From the dropdown, select the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} option.  
+5. Choose the reason that best matches your concern.  
+6. If needed, add any additional details, then submit the report.  
+
+Our moderation team will review the submission and take appropriate action.",2eaf878a,What is the procedure to flag and submit a concern regarding suitable content for viewers?,RELEVANT,"The answer directly outlines the steps to flag and submit a concern about content suitability, matching the question."
+I don’t have that information.,801a2f21,Can you guide me through contacting customer support regarding sexually suggestive posts or pictures found online via your service?,NON_RELEVANT,"The response fails to provide any guidance on contacting customer support, thus it does not address the question."
+"When you report an inappropriate image or video, our moderation team reviews the submission, investigates the content and then takes the appropriate action — removing the material, restricting access or applying other measures that align with our community standards.
+
+In addition to your comment, the report should focus on  
+
+* **Choosing the correct reason for the report** (selecting the most relevant option from the list), and  
+* **Providing any extra details or supplementary information** required before you submit.  
+
+These elements help the team assess the case quickly and decide on the proper action.",dab953e3,"Can someone help me understand what actions are taken if inappropriate images or videos found by a user is reported, along with which part of the report they need focus on (in addition to their comment)?",RELEVANT,"The answer explains the moderation actions taken on reported inappropriate media and specifies which additional parts of the report (reason selection and extra details) should be focused on, directly addressing the question."
+"Yes. When you want to report an abusive (inappropriate) post, you should:
+
+1. Locate the specific content you want to flag.  
+2. Click the **{{REPORT_SECTION}}** that appears close to the content – it is shown as a **{{FLAG_ICON}}** (a flag).  
+3. From the dropdown that appears, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** and follow the prompts to submit your report.
+
+The flag icon is placed next to the content to make it easy to identify the reporting button, indicating that you can flag that item for review.",1094a6b7,"Is there a specific section or button where I need to click when submitting an abusive post, and why do they have flags next to them?",RELEVANT,The answer explains exactly where to click (the flag/report button) and why the flags are shown next to posts.
+I don’t have that information.,044e907c,"Is there anyone available at these hours that my urgent concerns about adult material can be directed toward via 'Report' option within the site marked by specific icon, and if so what actions will ensue once I submit it for review promptly during such times without compromising privacy or misplacing content?",NON_RELEVANT,"The answer provides no information about the availability, reporting process, or actions, thus does not address the question."
+I don’t have that information.,66ade00c,"After I claim what seems like copyright blunder on our site, how quickly will you find this issue in the belly of digital beast within?",NON_RELEVANT,The answer states lack of information and does not address the question about how quickly the issue will be found.
+"To submit an abusive (inappropriate) content report, follow these steps:
+
+1. Go to our website at **{{WEBSITE_URL}}**.  
+2. Locate the specific content you consider abusive.  
+3. Click the **{{REPORT_SECTION}}** — usually shown next to the content as a **{{FLAG_ICON}}** icon.  
+4. From the menu that appears, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the most appropriate reason for your report from the list provided.  
+6. If needed, add any additional details that will help our team evaluate the issue.  
+7. Submit the report.
+
+Our moderation team will review your submission and take appropriate action according to our community standards.",a70eb079,"Can someone assist me in submitting an abusive content report, and what are the steps for doing so?",RELEVANT,"The answer provides a clear step-by-step guide on how to submit an abusive content report, directly addressing the request."
+"To report a copyright infringement, follow these steps:
+
+1. **Visit the website** – go to {{WEBSITE_URL}}.  
+2. **Navigate to the copyright area** – open the {{COPYRIGHT_SECTION}} section.  
+3. **Start the report** – click the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}} option/link.  
+4. **Provide details** – fill in the required fields with full information about the infringement.  
+5. **Submit** – send the completed form for review.  
+
+Clicking the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** within the **{{COPYRIGHT_SECTION}}** initiates the reporting procedure.",49ee76d8,What are the steps for reporting an infringement of copyright on your content management system and where do I click to start that procedure?,RELEVANT,"The answer provides a step-by-step procedure and specifies the click location for reporting copyright infringement, directly addressing the question."
+"You can report it by:
+
+1. Visiting Media’s official website at **{{WEBSITE_URL}}**.  
+2. Going to the **{{COPYRIGHT_SECTION}}** area.  
+3. Selecting the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option and submitting the required details.",ef3aab6e,Where can I report a case of copyright infringement on Media's website?,RELEVANT,"The answer directly addresses where and how to report copyright infringement on Media's website, providing the relevant steps."
+"To report unauthorized copying of your material, follow these steps (using the placeholders shown in our system):
+
+1. **Open the site** – go to **{{WEBSITE_URL}}**.  
+2. **Navigate to the copyright area** – locate the section labeled **{{COPYRIGHT_SECTION}}**.  
+3. **Start the report** – click the link or button for **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}**.  
+4. **Fill in the details** – provide the required information about the infringing content (e.g., URLs, description, your ownership proof).  
+5. **Submit the form** – after completing the fields, press **Submit** to send your report to our review team.
+
+Our team will review the submission and take the appropriate action in line with our policies.",43fdc6d5,"Can you guide me through the steps required to report unautherised copying of my material within your site, using natural language examples where placeholders are used?",RELEVANT,"The answer gives a step-by-step guide with placeholder examples, directly addressing how to report unauthorized copying."
+"To report a copyright violation, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required fields with accurate details about the infringement.  
+5. Submit the completed form for our review.",d37e24c5,How can I report a copyright violation on your official page?,RELEVANT,The answer provides a clear step-by-step procedure for reporting a copyright violation on the official page.
+"To report rights (copyright) infringement online, follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in all required fields with detailed information about the infringement.  
+5. Submit the notification for our review.  
+
+After submission, our team will assess the report and take appropriate action according to our policies.",d5d7d5b0,Could you explain the process of reporting foul play regarding rights infringement online through this platform?,RELEVANT,"The answer directly outlines the steps to report rights infringement on the platform, matching the user's request."
+"When you report the offensive content, follow these steps:
+
+1. Click the {{REPORT_SECTION}} (flag) next to the content.  
+2. Choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} from the menu.  
+3. A list of predefined reasons will appear. Review the options and select the one that most accurately describes why the content is offensive.  
+
+Pick the reason that best matches the nature of the violation, then add any extra details if needed and submit the report.",063e9741,Can you explain how to select an appropriate reason from a list provided when filing a complaint against something considered offensive on the discussion platform?,RELEVANT,The answer directly describes the process of reviewing and choosing the appropriate reason from the provided list when filing a complaint.
+"To report an inappropriate video clip, follow these steps:
+
+1. Go to the website at **{{WEBSITE_URL}}**.  
+2. Locate the video that you consider inappropriate.  
+3. Click the **{{REPORT_SECTION}}** link near the video (marked by a **{{FLAG_ICON}}**).  
+4. From the dropdown menu, select the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Choose the reason that best matches the issue from the list provided.  
+6. If needed, add any extra details to help the review team, then submit your report.
+
+The moderation team will review your report and take appropriate action according to our community standards.",43def3ca,Could someone tell me how a user can report inappropriate video clips discovered on the site for review by moderators?,RELEVANT,"The answer gives a step-by-step guide on how a user can report inappropriate video clips, directly addressing the question."
+I don’t have that information.,8f35ee5f,In case a creator’sexpression appears to violate copyright on your site using elements not from them; could you elucidate how one proceeds?,NON_RELEVANT,"The answer provides no information about the steps to take for alleged copyright violations, thus does not address the question."
+"To report a copyright issue, follow these steps:
+
+1. Go to our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** section.  
+3. Choose the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required details about the infringement.  
+5. Submit the form for our review.  
+
+Your report will be processed promptly according to our policies.",d37e24c5,"I encountered copyright issues on your platform, what is the official process for raising this concern effectively and where should I begin?",RELEVANT,"The answer directly provides the official steps to report a copyright issue, addressing both the process and starting point."
+"You can find the reporting form by:
+
+1. Visiting our official website ({{WEBSITE_URL}}).  
+2. Going to the **{{COPYRIGHT_SECTION}}** area.  
+3. Selecting the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** link.
+
+The form will ask you to provide **the necessary details regarding the infringement**. According to the information we have, you should enter accurate information about the copyrighted work and the unauthorized use. This includes details such as the nature of the work, how it is being used without permission, and any relevant dates (e.g., the publication date of your video on January 1 2021). After completing the fields, submit the form for our evaluation.",70fb093a,"Where do I find the form for reporting unauthorized use of creative works within our system? And what details are required in that form to make a proper complaint about copyright violation regarding my video content published on January 1st, 2021?",RELEVANT,"The answer provides both where to find the reporting form and the required details, directly addressing the user's question."
+"To report explicit content on our platform, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the content you consider explicit.  
+3. Click the **{{REPORT_SECTION}}** (usually shown by a **{{FLAG_ICON}}**) next to the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** from the menu.  
+5. Select the most appropriate reason for your report and, if needed, add any additional comments.  
+6. Submit the report.  
+
+Our team will review your submission and take action according to our community standards.",17c18adc,How can I report explicit content on your platform?,RELEVANT,"The answer provides step‑by‑step instructions for reporting explicit content, directly addressing the question."
+"To report a possible copyright infringement, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Find the {{CONTACT_US_SECTION}} on the site.  
+3. Select the option to talk with a human representative.  
+4. Provide the required details about the content and submit your request.  ",f5810df0,What steps do I need to follow after finding a piece of content that might be using someone else's work without permission?,PARTLY_RELEVANT,"The answer offers generic reporting steps related to the question, but uses placeholders and omits important actions like documenting the infringement, making it only partially relevant."
+"To submit an infringement complaint on our website, follow these steps:
+
+1. Visit our official website at **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Click the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option/link.  
+4. Fill in the required fields with the details of the infringement.  
+5. Submit the completed form for review.",dad7cacf,What specific steps must be taken for submitting an infringement complaint via our website's designated section?,RELEVANT,"The answer provides a step-by-step procedure for submitting an infringement complaint through the website, directly addressing the question."
+"To report troubling content, follow these steps:
+
+1. Go to {{WEBSITE_URL}}.  
+2. Locate the specific content you want to flag.  
+3. Click the {{REPORT_SECTION}}—usually shown as a {{FLAG_ICON}} next to the content.  
+4. From the menu, choose the {{REPORT_INAPPROPRIATE_CONTENT_OPTION}} option.  
+5. Select the most appropriate reason for your report from the available choices.  
+6. Add any additional details if needed, then submit the report.  
+
+Our moderation team will review the submission and take appropriate action.",e055cca3,"There seems to be troubling content on the site I frequent, and I want to notify you of it without delay. What are the steps involved using icons or other markers available in notifications/reports section of your website?",RELEVANT,"The answer gives a step-by-step guide on how to use the flag/report icon and related options to notify about troubling content, directly addressing the question."
+"Sure! Here’s how you can report alleged content misuse using the site’s menu options:
+
+1. **Locate the content** you believe is inappropriate.  
+2. **Click the report/flag icon** (usually displayed next to the content).  
+3. From the menu that appears, **select the “Report Inappropriate Content”** option.  
+4. **Choose the reason** that best matches the issue from the list provided.  
+5. If needed, **add any additional details** to help the review team.  
+6. **Submit** the report.
+
+Our team will then review the submission and take appropriate action in line with our community standards.",210cd996,"Could you guide me through the process of reporting alleged content misuse according to our site menu items, please exclude URLs for simplicity.",RELEVANT,The answer directly guides the user through reporting alleged content misuse via site menu items without including URLs.
+"You’ll need to fill out the official copyright‑infringement form on our website, providing **comprehensive details about the alleged illegal distribution**. The form requires you to supply all relevant information about the infringement so it can be evaluated. 
+
+(If you need the exact fields, please follow the steps in the instructions to access the form.)",caa8e588,What information do I have to provide in detail when submitting an official claim for illegal distribution of my work?,PARTLY_RELEVANT,"The answer mentions that detailed information must be provided but does not specify what specific details are required, offering only a generic suggestion."
+"To report a possible infringement, follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required details about the infringement.  
+5. Submit the form for our review.  
+
+Your report will be evaluated and appropriate action will be taken in line with our policies.",88ded4ea,Can you guide me through the process of reporting a possible infringement by others using your service?,RELEVANT,"The answer provides a step-by-step guide on how to report a possible infringement, directly addressing the user's request."
+"To report material that contains inappropriate or distasteful comments about women, follow these steps:
+
+1. Go to **{{WEBSITE_URL}}**.  
+2. Locate the specific content you find objectionable.  
+3. Click the **{{REPORT_SECTION}}** (usually shown as a **{{FLAG_ICON}}**) near the content.  
+4. Choose the **{{REPORT_INAPPROPRIATE_CONTENT_OPTION}}** option.  
+5. Select the most relevant reason for your report from the list provided.  
+6. Add any additional comments or details, then submit the report.  
+
+Our team will review your submission and take action according to our community standards.",7e4fdf0d,What steps should I take if the material displayed on your site makes inappropriate comments about women appear distasteful or unacceptable?,RELEVANT,"The answer provides a step-by-step procedure for reporting inappropriate comments about women, directly addressing the question."
+"To address the unauthorized use of copyrighted material, you can file a copyright‑infringement report through our website:
+
+1. Visit **{{WEBSITE_URL}}**.  
+2. Navigate to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Complete the form with all relevant details about the infringement.  
+5. Submit the report.
+
+Our moderation team will review the submission and take the appropriate actions in accordance with our policies.",6f22af7b,I've noticed someone is using copyrighted material without permission. What actions can my company take through this website to address it?,RELEVANT,"The answer provides step-by-step instructions for filing a copyright‑infringement report on the website, directly addressing the asked actions."
+I don’t have that information.,8272a09d,"If there's something not up to policy on Media.com, what are your guidelines for ensuring everyone enjoys a safe environment?",NON_RELEVANT,The answer states lack of information and does not provide any guidelines related to the policy question.
+"Look for the **report section** next to the content you want to flag—usually shown as a **flag icon**. Tap that icon, then choose the **“Report Inappropriate Content”** option from the dropdown menu and follow the prompts to submit your complaint.",29506ac4,What should I look for on the app to find a button or option to submit my inappropriate content complaint?,RELEVANT,The answer directly tells the user where to find the reporting button (flag icon) and how to use it to submit a complaint.
+"To start a copyright‑infringement report, follow these steps:
+
+1. Visit our website at **{{WEBSITE_URL}}**.  
+2. Go to the **{{COPYRIGHT_SECTION}}** area.  
+3. Select the **{{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}** option.  
+4. Fill in the required details about the infringement.  
+5. Submit the report for our team’s review.",f5810df0,How can I initiate the reporting of copyright infringement on your platform?,RELEVANT,"The answer provides step‑by‑step instructions on how to start a copyright‑infringement report, directly addressing the question."
+"To report the material, use our copyright‑infringement report form:
+
+1. Go to the official website ({{WEBSITE_URL}}).  
+2. Open the {{COPYRIGHT_SECTION}}.  
+3. Select the {{REPORT_COPYRIGHT_INFRINGEMENT_OPTION}}.  
+4. Fill in the required fields, providing the details you can share while keeping any proprietary information confidential.  
+5. Submit the form for our team to review.",d35afc44,I found unautdonated material that appears similar to mine; how do I send this info without revealing proprietary details prematurely?,RELEVANT,"The answer provides a process for reporting the unauthorized material while allowing the user to keep proprietary details confidential, directly addressing the question."
+I don’t have that information.,889c481c,Can you explain where on your English-language site one should go to report copyright issues seen by users worldwide using different payment options like credit card or PayPal services?,NON_RELEVANT,"The answer does not provide any location or guidance for reporting copyright issues, merely states lack of information."

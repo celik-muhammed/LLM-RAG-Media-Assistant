@@ -1,0 +1,62 @@
+# ======================================================================
+# Example .envrc file template
+# ======================================================================
+# Copy this file as `.envrc` and update the values:
+#   cp .envrc_template .envrc
+# Then run:
+#   direnv allow
+#
+# Notes:
+# - Use CHANGE_ME placeholders for sensitive values.
+# - Keep consistent uppercase variable names.
+# ======================================================================
+
+
+# --- General Project Settings ---
+# export PROJECT_NAME="media_rag"
+# export ENVIRONMENT="dev"
+
+
+# --- API Keys (choose what you need) ---
+# export OPENAI_API_KEY="CHANGE_ME"
+# export ANTHROPIC_API_KEY="CHANGE_ME"
+# export GOOGLE_API_KEY="CHANGE_ME"
+# export HF_TOKEN="CHANGE_ME"
+
+
+# --- Ollama / LLM ---
+# If using Ollama locally:
+# export OLLAMA_URL="http://localhost:11434/v1/"
+# Otherwise, set to None (for OpenAI, Anthropic, etc.)
+# export OLLAMA_URL="None"
+# Default model
+# export LLM_MODEL="phi3"
+
+
+# --- Database / Index ---
+# Example connection string for PostgreSQL
+# export DB_URL="postgresql://user:password@localhost:5432/media_rag"
+# Or specify components separately
+# export POSTGRES_DB="media_rag"
+# export POSTGRES_USER="CHANGE_ME"
+# export POSTGRES_PASSWORD="CHANGE_ME"
+# export POSTGRES_HOST="localhost"
+# export POSTGRES_PORT="5432"
+# Path for local index storage
+# export INDEX_PATH="./index_storage"
+
+
+# --- Model / Search Config ---
+# export DEFAULT_EMBEDDING_MODEL="all-MiniLM-L6-v2"
+# export DEFAULT_GENERATION_MODEL="gpt-4o-mini"
+# export NUM_RESULTS=5
+
+
+# --- Logging ---
+# export LOG_LEVEL="INFO"
+# export LOG_FILE="./logs/app.log"
+
+
+# --- Miscellaneous ---
+# Website / API endpoints
+# export WEBSITE_URL="https://example.com"

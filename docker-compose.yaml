@@ -1,0 +1,147 @@
+version: '3.8'
+
+networks:
+  # Define the network globally
+  back-tier:
+    driver: bridge
+
+volumes:
+  ollama:
+  postgres_data:
+  grafana_data:
+
+
+services:
+
+  # elasticsearch:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+  #   container_name: elasticsearch
+  #   environment:
+  #     - discovery.type=single-node
+  #     - xpack.security.enabled=false
+  #   ports:
+  #     - "9200:9200"
+  #     - "9300:9300"
+  #   networks:
+  #     - back-tier  # Ensure network is correctly referenced
+
+
+  ollama:
+    tty: true
+    restart: always
+    image: ollama/ollama:latest
+    container_name: ollama
+    pull_policy: always
+    volumes:
+      - ollama:/root/.ollama
+      - ./ollama/entrypoint.sh:/entrypoint.sh  # script pull phi3 model
+    ports:
+      - "11434:11434"
+    networks:
+      - back-tier  # Ensure network is correctly referenced
+    # healthcheck:
+    #   # test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+    #   test: ["CMD", "curl", "-f", "http://localhost:11434/"]
+    #   interval: 10s
+    #   timeout: 5s
+    #   retries: 30
+    #   start_period: 60s
+    # https://ollama.com/library/phi3
+    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]  # pull phi3 model
+
+
+  postgres:
+    restart: unless-stopped
+    image: postgres:13
+    container_name: postgres
+    env_file:
+      - .env
+    # environment:
+    #   POSTGRES_DB: ${POSTGRES_DB}
+    #   POSTGRES_HOST: ${POSTGRES_HOST}
+    #   POSTGRES_USER: ${POSTGRES_USER}
+    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # See: https://gist.github.com/onjin/2dd3cc52ef79069de1faa2dfd456c945
+      - ./initdb:/docker-entrypoint-initdb.d
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    networks:
+      - back-tier  # Ensure network is correctly referenced
+    healthcheck:
+      # test: ["CMD-SHELL", "pg_isready -U user"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d media_assistant"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  
+  
+  adminer:
+    image: "adminer:latest"
+    container_name: "adminer"
+    env_file: ".env"
+    environment:
+      ADMINER_PORT: "${ADMINER_PORT:-9002}"
+    ports:
+      ## External Access: Used to specify port mappings between the Docker host and the container.
+      ## "<host_port>:<container_port>"
+      - "${ADMINER_PORT:-8080}:8080"
+    networks:
+      - "back-tier"
+    depends_on:
+      - postgres
+
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-admin}
+      GF_SECURITY_SECRET_KEY: ${GRAFANA_SECRET_KEY:-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_USERS_ALLOW_ORG_CREATE: "false"
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_SECURITY_ALLOW_EMBEDDING: "true"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      # - ./grafana/dashboard.json:/dashboard.json:ro
+      # - ./grafana/init.py:/init.py:ro
+    ports:
+      - "3000:3000"
+    networks:
+      - back-tier  # Ensure network is correctly referenced
+    depends_on:
+      - postgres
+    # entrypoint: [ "sh", "-c", "grafana-server & sleep 10 && python3 /init.py && wait" ]
+    # entrypoint: >-
+    #   sh -c "
+    #     grafana-server --homepath=/usr/share/grafana & 
+    #     sleep 10 &&
+    #     python /init.py &&
+    #     wait
+    #   "
+
+
+  app:
+    build:
+      context: .   # Flask/FastAPI
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=development
+    #   POSTGRES_HOST: postgres  # Ensure POSTGRES_HOST points to the service name
+    #   POSTGRES_DB: ${POSTGRES_DB}
+    #   POSTGRES_USER: ${POSTGRES_USER}
+    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    #   OPENAI_API_KEY: ${OPENAI_API_KEY}
+    #   DATA_PATH: "Data/documents-with-ids.json"
+    ports:
+      - "${APP_PORT:-5000}:5000"
+    networks:
+      - back-tier  # Ensure network is correctly referenced
+    depends_on:
+      - ollama
+      - postgres

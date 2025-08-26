@@ -1,5 +1,6 @@
 {
   "name": "Ollama Dev (phi3)",
+  // https://hub.docker.com/r/ollama/ollama/tags
   "image": "ollama/ollama:latest",
 
   "runArgs": [],
@@ -26,5 +27,10 @@
     }
   },
 
+  // ⚠️ https://ollama.com/library/gpt-oss  ~13GB
+  // ollama pull gpt-oss
+  // ⚠️ https://ollama.com/library/phi3  ~2.5GB
+  // ollama pull phi3
+  // 👍 curl https://<your-forwarded-url>.app.github.dev/v1
   "postCreateCommand": "ollama pull phi3"
 }
