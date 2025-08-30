@@ -6,15 +6,15 @@ networks:
     driver: bridge
 
 volumes:
-  ollama:
-  postgres_data:
-  grafana_data:
+  ollama:  # locally phi3 model ~2gb
+  postgres_data:  # store questions ad feedbacks
+  grafana_data:  # dashboard
 
 
 services:
 
   # elasticsearch:
-  #   image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+  #   image: "docker.elastic.co/elasticsearch/elasticsearch:8.4.3"
   #   container_name: elasticsearch
   #   environment:
   #     - discovery.type=single-node
@@ -29,16 +29,17 @@ services:
   ollama:
     tty: true
     restart: always
-    image: ollama/ollama:latest
+    image: "ollama/ollama:latest"
     container_name: ollama
     pull_policy: always
     volumes:
-      - ollama:/root/.ollama
-      - ./ollama/entrypoint.sh:/entrypoint.sh  # script pull phi3 model
+      - ollama:/root/.ollama  # put downloaded models
+      - ./ollama/entrypoint.sh:/root/entrypoint.sh  # script pull phi3 model and serve
     ports:
       - "11434:11434"
     networks:
       - back-tier  # Ensure network is correctly referenced
+    entrypoint: ["/usr/bin/bash", "/root/entrypoint.sh"]  # script pull phi3 model and serve
     # healthcheck:
     #   # test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
     #   test: ["CMD", "curl", "-f", "http://localhost:11434/"]
@@ -47,12 +48,11 @@ services:
     #   retries: 30
     #   start_period: 60s
     # https://ollama.com/library/phi3
-    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]  # pull phi3 model
 
 
   postgres:
     restart: unless-stopped
-    image: postgres:13
+    image: "postgres:latest"
     container_name: postgres
     env_file:
       - .env
@@ -78,9 +78,11 @@ services:
   
   
   adminer:
+    restart: unless-stopped
     image: "adminer:latest"
     container_name: "adminer"
-    env_file: ".env"
+    env_file:
+      - .env
     environment:
       ADMINER_PORT: "${ADMINER_PORT:-9002}"
     ports:
@@ -94,20 +96,45 @@ services:
 
 
   grafana:
-    image: grafana/grafana:latest
+    restart: unless-stopped
+    image: "grafana/grafana:latest"
     container_name: grafana
+    # Host specifics
+    # hostname: ${HOSTNAME:-services}
+    # User ID and Group ID
+    user: "${PUID:-472}:${PGID:-0}"  # for load custom grafana.ini config file in docker-compose
+    env_file:
+      # https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/
+      - .env
     environment:
-      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:-admin}
-      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-admin}
-      GF_SECURITY_SECRET_KEY: ${GRAFANA_SECRET_KEY:-admin}
+      # GF_SECURITY_ADMIN_USER: admin
+      # GF_SECURITY_ADMIN_PASSWORD: admin
+      # GF_PATHS_CONFIG: "/etc/grafana/grafana.ini"
+      # GF_PATHS_DATA: /var/lib/grafana
+      # GF_PATHS_HOME: /usr/share/grafana
+      # GF_PATHS_LOGS: /var/log/grafana
+      # GF_PATHS_PLUGINS: /var/lib/grafana/plugins
+      # GF_PATHS_PROVISIONING: /etc/grafana/provisioning
+      # HOME: /home/grafana
+      GF_SECURITY_ADMIN_USER: "${GRAFANA_ADMIN_USER:-admin}"
+      GF_SECURITY_ADMIN_PASSWORD: "${GRAFANA_ADMIN_PASSWORD:-admin}"
+      GF_SECURITY_SECRET_KEY: "${GRAFANA_SECRET_KEY:-SECRET_KEY}"
+      GF_SECURITY_ALLOW_EMBEDDING: "true"
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      # GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer  # 'Editor' deprecated only viewer role
       GF_USERS_ALLOW_SIGN_UP: "false"
       GF_USERS_ALLOW_ORG_CREATE: "false"
-      GF_AUTH_ANONYMOUS_ENABLED: "false"
-      GF_SECURITY_ALLOW_EMBEDDING: "true"
     volumes:
-      - grafana_data:/var/lib/grafana
-      # - ./grafana/dashboard.json:/dashboard.json:ro
-      # - ./grafana/init.py:/init.py:ro
+      # Optional: Persist Grafana data (users, settings, plugins, etc.)
+      - "grafana_data:${GF_PATHS_DATA:-/var/lib/grafana}:rw"
+      # Actual dashboards JSON directory (exported dashboards go here)
+      # Maps a local file to a file inside the container, and makes it read-only
+      - "./grafana/dashboards/dashboards.json:${GF_PATHS_HOME:-/usr/share/grafana}/dashboards/dashboards.json:ro"  # your exported dashboards
+      # Provisioning configs (dashboards + datasources.yaml)
+      # https://grafana.com/docs/grafana/latest/administration/provisioning/
+      - "./grafana/provisioning/dashboards/dashboards.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/dashboards/dashboards.yaml:ro"  # defines dashboards provider
+      - "./grafana/provisioning/datasources/datasources.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/datasources/datasources.yaml:ro"  # defines datasources
+      - "./grafana/custom.ini:${GF_PATHS_CONFIG:-/etc/grafana/grafana.ini}"  # provisioning = true
     ports:
       - "3000:3000"
     networks:

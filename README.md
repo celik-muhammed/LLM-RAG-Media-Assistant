@@ -197,21 +197,43 @@ select * from conversations;
 
 When the application is running, we can start using it.
 
-### Streamlit 
+
+### App Streamlit 
 
 To run the streamlit app:
 
 ```bash
-pipenv streamlit run streamlit_app.py
+# streamlit run app_st.py
+pipenv run streamlit run app_st.py
 ```
 
 You can now view your Streamlit app in your browser.
 
 <p align="center">
-  <img src="images/streamlit_app.png">
+  <img src="images/app_st.png">
 </p>
 
-### CLI
+
+### (Optionally) App Gradio 
+
+To run the gradio app:
+
+```bash
+pipenv install gradio
+```
+```bash
+# python app_gr.py
+pipenv run python app_gr.py
+```
+
+You can now view your Gradio app in your browser.
+
+<p align="center">
+  <img src="images/app_gr.png">
+</p>
+
+
+### App CLI
 
 We built an interactive CLI application using
 [questionary](https://questionary.readthedocs.io/en/stable/).
@@ -242,7 +264,7 @@ pipenv run python test.py
 It will pick a random question from the ground truth dataset
 and send it to the app.
 
-### CURL
+### Using `CURL`
 
 You can also use `curl` for interacting with the API:
 
@@ -251,8 +273,6 @@ See: Makefile
 ```bash
 make help
 ```
-
-
 
 
 ### Time configuration

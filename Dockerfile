@@ -36,7 +36,7 @@ EXPOSE 5000
 # Default Gunicorn timeout = 30s → increase due to LLM latency
 # Workers: tune based on CPU (e.g., 2–4 for small servers)
 # CMD gunicorn --bind 0.0.0.0:5000 --timeout 400 app:app
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "600", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "1200", "app:app"]
 
 ######################################################################
 # END OF FILE

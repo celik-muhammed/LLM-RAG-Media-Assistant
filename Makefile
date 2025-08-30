@@ -29,6 +29,7 @@ help:
 	@echo "  make docker-down      - Stop services"
 	@echo "  make cli              - Run CLI chat client"
 	@echo "  make streamlit        - Run Streamlit chat app"
+	@echo "  make gradio           - Run Gradio chat app"
 	@echo "  make test             - Run tests with pytest"
 	@echo "  make env-setup        - Initialize environment variables (.envrc)"
 	@echo "  make env-clean        - Remove .envrc and reset direnv"
@@ -81,7 +82,11 @@ cli:
 
 streamlit:
 	@echo "Starting Streamlit Chat..."
-	$(PYTHON) st_app.py
+	$(PYTHON) -m streamlit run app_st.py
+
+gradio:
+	@echo "Starting Gradio Chat..."
+	$(PYTHON) app_gr.py
 
 test:
 	@echo "Running tests..."

@@ -4,8 +4,8 @@
       {
         "builtIn": 1,
         "datasource": {
-          "type": "grafana",
-          "uid": "-- Grafana --"
+          "type": "grafana-postgresql-datasource",
+          "uid": "PCC52D03280B7034C"
         },
         "enable": true,
         "hide": true,
@@ -24,15 +24,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 5,
+  "id": 2484771873206272,
   "links": [],
-  "liveNow": false,
   "panels": [
     {
       "datasource": {
         "default": false,
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -52,7 +51,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -108,12 +107,12 @@
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "11.2.0",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -146,7 +145,7 @@
       "datasource": {
         "name": "grafana-postgresql-datasource",
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -190,15 +189,17 @@
           "values": false
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -231,7 +232,7 @@
       "datasource": {
         "name": "grafana-postgresql-datasource",
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -241,7 +242,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "orange",
@@ -276,12 +277,12 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.2.0",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -314,7 +315,7 @@
       "datasource": {
         "name": "grafana-postgresql-datasource",
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -347,7 +348,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -381,17 +383,19 @@
         "showValue": "never",
         "stacking": "none",
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         },
         "xTickLabelRotation": 0,
         "xTickLabelSpacing": 0
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -424,7 +428,7 @@
       "datasource": {
         "default": false,
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -469,7 +473,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -495,15 +500,17 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -531,7 +538,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "hide": false,
           "refId": "B"
@@ -544,7 +551,7 @@
       "datasource": {
         "name": "grafana-postgresql-datasource",
         "type": "grafana-postgresql-datasource",
-        "uid": "be05u87jqjw8wb"
+        "uid": "PCC52D03280B7034C"
       },
       "fieldConfig": {
         "defaults": {
@@ -589,7 +596,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -615,15 +623,17 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "be05u87jqjw8wb"
+            "uid": "PCC52D03280B7034C"
           },
           "editorMode": "code",
           "format": "table",
@@ -653,20 +663,20 @@
       "type": "timeseries"
     }
   ],
+  "preload": false,
   "refresh": "30s",
-  "schemaVersion": 39,
+  "schemaVersion": 41,
   "tags": [],
   "templating": {
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-12h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "customer support",
+  "title": "Media Support Dashboards",
   "uid": "QTaWhmqSz",
-  "version": 8,
-  "weekStart": ""
+  "version": 3
 }
