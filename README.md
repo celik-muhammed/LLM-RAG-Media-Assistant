@@ -89,7 +89,8 @@ Entities in the dataset include:
 
 ### Running with Docker Compose
 
-![](images\app-port-mapping.png)
+<!-- ![](images\app-port-mapping.png) -->
+<p align="center"> <img src="images/app-port-mapping.png" width="800"> </p>
 
 The easiest way to run the application is with legacy `docker-compose` or `docker compose`:
 
@@ -166,7 +167,8 @@ direnv allow
 ## (If Neccessary) Running the application
 
 
-![](images\adminer-tables.png)
+<!-- ![](images\adminer-tables.png) -->
+<p align="center"> <img src="images/adminer-tables.png" width="800"> </p>
 
 ### 🗄️ Database configuration
 
