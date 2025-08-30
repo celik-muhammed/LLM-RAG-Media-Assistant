@@ -7,8 +7,8 @@ until pg_isready -h postgres -p 5432 -U user; do
   sleep 2
 done
 
-echo "Postgres ready, running db prep"
-python db_prep.py
+# echo "Postgres ready, running db prep"
+# python db_prep.py
 
 # Start app
 # timeout must be higher than slow requests (LLM calls).
