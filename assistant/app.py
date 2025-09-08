@@ -5,6 +5,7 @@ import logging
 from flask import Flask, request, jsonify
 
 import db
+from config import SETTINGS
 from rag import rag
 
 # ---------------- Logging ----------------
@@ -30,6 +31,8 @@ def home():
 @app.route("/question", methods=["POST"])
 def handle_question():
     try:
+        conversation_id = str(uuid.uuid4())
+
         # data = request.json
         data = request.get_json(force=True, silent=True) or {}
         logger.info(f"Incoming question request: {data}")
@@ -37,8 +40,6 @@ def handle_question():
         question = data.get("question")
         if not question:
             return jsonify({"error": "Question must be a non-empty string"}), 400
-
-        conversation_id = str(uuid.uuid4())
 
         # Call RAG model
         try:
@@ -127,17 +128,15 @@ def health():
     # ✅ Check Ollama LLM health check
     try:
         import requests
-        ollama_url = os.getenv("OLLAMA_URL", "http://ollama:11434/v1/")
-        model_name = os.getenv("LLM_MODEL", "phi3")
         payload = {
-            "model": model_name,
+            "model": SETTINGS.MODEL_CHAT,
             "messages": [{"role": "user", "content": "ping"}]
         }
         headers = {"Content-Type": "application/json"}
 
         # Optional: List models to check availability
         r = requests.get(
-            f"{ollama_url}models",
+            f"{SETTINGS.BASE_URL}models",
             # timeout=3,
         )
         # print(r.json())  # see if phi3 is available
@@ -145,7 +144,7 @@ def health():
 
         # Send a lightweight ping to the LLM
         r = requests.post(
-            f"{ollama_url}chat/completions",
+            f"{SETTINGS.BASE_URL}chat/completions",
             json=payload,
             headers=headers,
             # timeout=5,

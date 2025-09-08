@@ -4,26 +4,34 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-openai = "*"
-scikit-learn = "*"
-pandas = "*"
-flask = "*"
-psycopg2-binary = "*"
 python-dotenv = "*"
-gunicorn = "*"
+pydantic = "*"
+pydantic_settings = "*"
+
+psycopg2-binary = "*"
+pandas = "*"
+
+scikit-learn = "*"
+fastembed = "*"
 huggingface_hub = "*"
+openai = "*"
+
 streamlit = "*"
+flask = "*"
+gunicorn = "*"
 
 [dev-packages]
-tqdm = "*"
-notebook = "==7.1.2"
-ipywidgets = "*"
 jupyter = "*"
+notebook = "==7.1.2"
+tqdm = "*"
+ipywidgets = "*"
+
 requests = "*"
 pgcli = "*"
-questionary = "*"
+
 optuna = "*"
 minsearch = "*"
+questionary = "*"
 
 [requires]
 python_version = "3.12"

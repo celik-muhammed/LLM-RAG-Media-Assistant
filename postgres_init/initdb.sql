@@ -2,9 +2,7 @@
 CREATE SCHEMA IF NOT EXISTS public;
 
 -- Drop tables if they exist
-DROP TABLE IF EXISTS public.feedback;
 DROP TABLE IF EXISTS public.conversations;
-
 -- Create conversations table
 CREATE TABLE IF NOT EXISTS public.conversations (
     id TEXT PRIMARY KEY,
@@ -23,6 +21,8 @@ CREATE TABLE IF NOT EXISTS public.conversations (
     timestamp TIMESTAMP WITH TIME ZONE NOT NULL
 );
 
+-- Drop tables if they exist
+DROP TABLE IF EXISTS public.feedback;
 -- Create feedback table
 CREATE TABLE IF NOT EXISTS public.feedback (
     id SERIAL PRIMARY KEY,
@@ -31,6 +31,8 @@ CREATE TABLE IF NOT EXISTS public.feedback (
     timestamp TIMESTAMP WITH TIME ZONE NOT NULL
 );
 
+-- Drop tables if they exist
+DROP TABLE IF EXISTS public.todos;
 -- Example todos table (optional)
 CREATE TABLE IF NOT EXISTS public.todos (
     id SERIAL PRIMARY KEY,

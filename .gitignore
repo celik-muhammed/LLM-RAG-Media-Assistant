@@ -1,5 +1,10 @@
 
 .gradio
+postgres_data
+grafana_data
+ollama_data
+
+nltk_data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,5 +1,5 @@
-import os
-import time
+# import os
+# import time
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -16,46 +16,59 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 # logger.setLevel(logging.INFO)
 
+from config import SETTINGS, DB_CONFIG
+
 # ---------------- Config ----------------
 # Use environment variables to set timezone and db credentials
-RUN_TIMEZONE_CHECK = os.getenv('RUN_TIMEZONE_CHECK', '1') == '1'
-TZ_INFO = os.getenv("TZ", "Europe/Istanbul")
 # tz = ZoneInfo("Europe/Istanbul")
-tz = ZoneInfo(TZ_INFO)
+tz = ZoneInfo(SETTINGS.TZ_INFO)
 # timestamp = datetime.now(tz)
 # timestamp = datetime.now(timezone.utc)
-
-HOST=os.getenv("POSTGRES_HOST", "postgres") if os.path.exists("/.dockerenv") else "localhost"
-logger.info(HOST)
-
-# def wait_for_postgres(max_retries=30, delay=5):
-#     for i in range(max_retries):
-#         try:
-#             conn = psycopg2.connect(
-#                 dbname="media_assistant",
-#                 user="admin",
-#                 password="admin",
-#                 host="localhost",
-#                 port=5432
-#             )
-#             conn.close()
-#             print("✅ Postgres ready")
-#             return
-#         except Exception as e:
-#             print(f"⏳ Waiting for Postgres... {e}")
-#             time.sleep(delay)
-#     raise RuntimeError("Postgres not available after retries")
 
 
 # Get database connection details from environment variables
 def get_db_connection():
-    return psycopg2.connect(
-        database=os.getenv("POSTGRES_DB", "media_assistant"),
-        host=HOST,
-        port=os.getenv("POSTGRES_PORT", "5432"),
-        user=os.getenv("POSTGRES_USER", "admin"),
-        password=os.getenv("POSTGRES_PASSWORD", "admin"),
-    )
+    return psycopg2.connect(**DB_CONFIG)
+
+
+def create_table():
+    """
+    Creates a table for storing embeddings and associated text chunks.
+    Uses vector column for storing 1536-dim embeddings (Postgres pgvector extension).
+    """
+    with get_db_connection() as conn, conn.cursor() as cur:
+        cur.execute(f'''
+            -- Create schema if needed
+            CREATE SCHEMA IF NOT EXISTS public;
+
+            -- Create conversations table
+            CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE} (
+                id TEXT PRIMARY KEY,
+                question TEXT NOT NULL,
+                response TEXT NOT NULL,
+                model_used TEXT NOT NULL,
+                response_time FLOAT NOT NULL,
+                relevance TEXT NOT NULL,
+                relevance_explanation TEXT NOT NULL,
+                prompt_tokens INTEGER NOT NULL,
+                completion_tokens INTEGER NOT NULL,
+                total_tokens INTEGER NOT NULL,
+                eval_prompt_tokens INTEGER NOT NULL,
+                eval_completion_tokens INTEGER NOT NULL,
+                eval_total_tokens INTEGER NOT NULL,
+                timestamp TIMESTAMP WITH TIME ZONE NOT NULL
+            );
+
+            -- Create feedback table
+            CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE1} (
+                id SERIAL PRIMARY KEY,
+                conversation_id TEXT REFERENCES {SETTINGS.POSTGRES_TABLE}(id),
+                feedback INTEGER NOT NULL,
+                timestamp TIMESTAMP WITH TIME ZONE NOT NULL
+            );
+        ''')
+        conn.commit()
+        logger.info(f"{SETTINGS.POSTGRES_TABLE} Table created if not exist!")
 
 
 # Initialize the database schema (drop and create)
@@ -145,8 +158,16 @@ def save_feedback(conversation_id, feedback, timestamp=None):
     try:
         with conn.cursor() as cur:
             cur.execute(
-                "INSERT INTO feedback (conversation_id, feedback, timestamp) VALUES (%s, %s, COALESCE(%s, CURRENT_TIMESTAMP))",
-                (conversation_id, feedback, timestamp),
+                """
+                INSERT INTO feedback
+                (conversation_id, feedback, timestamp)
+                VALUES (%s, %s, COALESCE(%s, CURRENT_TIMESTAMP))
+                """,
+                (
+                    conversation_id,
+                    feedback,
+                    timestamp,
+                ),
             )
         conn.commit()
     finally:
@@ -203,7 +224,7 @@ def check_timezone():
             print(f"Database current time (UTC): {db_time_utc}")
 
             db_time_local = db_time_utc.astimezone(tz)
-            print(f"Database current time ({TZ_INFO}): {db_time_local}")
+            print(f"Database current time ({SETTINGS.TZ_INFO}): {db_time_local}")
 
             py_time = datetime.now(tz)
             print(f"Python current time: {py_time}")
@@ -222,12 +243,12 @@ def check_timezone():
 
             inserted_time = cur.fetchone()[0]
             print(f"Inserted time (UTC): {inserted_time}")
-            print(f"Inserted time ({TZ_INFO}): {inserted_time.astimezone(tz)}")
+            print(f"Inserted time ({SETTINGS.TZ_INFO}): {inserted_time.astimezone(tz)}")
 
             cur.execute("SELECT timestamp FROM conversations WHERE id = 'test';")
             selected_time = cur.fetchone()[0]
             print(f"Selected time (UTC): {selected_time}")
-            print(f"Selected time ({TZ_INFO}): {selected_time.astimezone(tz)}")
+            print(f"Selected time ({SETTINGS.TZ_INFO}): {selected_time.astimezone(tz)}")
 
             # Clean up the test entry
             cur.execute("DELETE FROM conversations WHERE id = 'test';")
@@ -238,8 +259,26 @@ def check_timezone():
     finally:
         conn.close()
 
+# def wait_for_postgres(max_retries=30, delay=5):
+#     for i in range(max_retries):
+#         try:
+#             conn = psycopg2.connect(
+#                 dbname="llm_rag",
+#                 user="admin",
+#                 password="admin",
+#                 host="localhost",
+#                 port=5432
+#             )
+#             conn.close()
+#             print("✅ Postgres ready")
+#             return
+#         except Exception as e:
+#             print(f"⏳ Waiting for Postgres... {e}")
+#             time.sleep(delay)
+#     raise RuntimeError("Postgres not available after retries")
+
 
 # Check if timezone should be checked
-if RUN_TIMEZONE_CHECK:
+if SETTINGS.RUN_TIMEZONE_CHECK:
     # init_db()
     check_timezone()

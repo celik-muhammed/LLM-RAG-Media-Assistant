@@ -6,9 +6,9 @@ networks:
     driver: bridge
 
 volumes:
-  ollama:  # locally phi3 model ~2gb
   postgres_data:  # store questions ad feedbacks
   grafana_data:  # dashboard
+  ollama_data:  # locally phi3 model ~2gb
 
 
 services:
@@ -28,18 +28,19 @@ services:
 
   ollama:
     tty: true
+    stdin_open: true
     restart: always
     image: "ollama/ollama:latest"
     container_name: ollama
     pull_policy: always
     volumes:
-      - ollama:/root/.ollama  # put downloaded models
-      - ./ollama/entrypoint.sh:/root/entrypoint.sh  # script pull phi3 model and serve
+      - ollama_data:/root/.ollama  # put downloaded models
+      - ./ollama_init/entrypoint.sh:/root/entrypoint.sh  # script serve and pull phi3 model ~3-4 min
     ports:
       - "11434:11434"
     networks:
       - back-tier  # Ensure network is correctly referenced
-    entrypoint: ["/usr/bin/bash", "/root/entrypoint.sh"]  # script pull phi3 model and serve
+    entrypoint: ["/usr/bin/bash", "/root/entrypoint.sh"]  # script serve and pull phi3 model ~3-4 min
     # healthcheck:
     #   # test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
     #   test: ["CMD", "curl", "-f", "http://localhost:11434/"]
@@ -59,12 +60,12 @@ services:
     # environment:
     #   POSTGRES_DB: ${POSTGRES_DB}
     #   POSTGRES_HOST: ${POSTGRES_HOST}
-    #   POSTGRES_USER: ${POSTGRES_USER}
-    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    #   POSTGRES_USER: "${POSTGRES_USER:-admin}"
+    #   POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-admin}"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       # See: https://gist.github.com/onjin/2dd3cc52ef79069de1faa2dfd456c945
-      - ./initdb:/docker-entrypoint-initdb.d
+      - ./postgres_init:/docker-entrypoint-initdb.d
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     networks:
@@ -83,8 +84,8 @@ services:
     container_name: "adminer"
     env_file:
       - .env
-    environment:
-      ADMINER_PORT: "${ADMINER_PORT:-9002}"
+    # environment:
+    #   ADMINER_PORT: "${ADMINER_PORT:-9002}"
     ports:
       ## External Access: Used to specify port mappings between the Docker host and the container.
       ## "<host_port>:<container_port>"

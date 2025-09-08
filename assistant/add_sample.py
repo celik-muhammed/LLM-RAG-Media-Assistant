@@ -4,6 +4,7 @@ from datetime import datetime
 import psycopg2
 
 import db  # your module with get_db_connection
+from config import SETTINGS
 
 # ---------------- Logging ----------------
 logging.basicConfig(
@@ -35,7 +36,7 @@ def add_sample_data():
                     "test_conversation_1",  # id
                     "What is the return policy?",  # question
                     "Our return policy lasts 30 days...",  # response
-                    "phi3",  # model_used
+                    f"{SETTINGS.MODEL_CHAT}",  # model_used chat
                     0.5,  # response_time
                     "RELEVANT",  # relevance
                     "The answer accurately addresses the question.",  # relevance_explanation

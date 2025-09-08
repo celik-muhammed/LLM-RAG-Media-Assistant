@@ -1,11 +1,7 @@
 import os
 import json
+
 import logging
-
-import pandas as pd
-
-import minsearch  # your module with Index
-
 # ---------------- Logging ----------------
 logging.basicConfig(
     level=logging.INFO,  # DEBUG, INFO, WARNING, ERROR, CRITICAL
@@ -14,9 +10,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 # logger.setLevel(logging.INFO)
 
+import pandas as pd
+import minsearch  # your module with Index
+
+from config import SETTINGS
+
 # ---------------- Config ----------------
 DATA_PATH = (
-    os.getenv("DATA_PATH", "./Data/documents-with-ids.json")
+    SETTINGS.DATA_PATH
     if os.path.exists('/.dockerenv') else
     "../Data/documents-with-ids.json"
 )

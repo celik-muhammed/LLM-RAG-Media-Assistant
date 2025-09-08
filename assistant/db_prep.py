@@ -1,18 +1,12 @@
-import os
 import logging
-from dotenv import load_dotenv
-
-import db  # your module with init_db
-
-# Load environment variables
-load_dotenv()
-
 # ---------------- Logging ----------------
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
 )
 logger = logging.getLogger(__name__)
+
+import db  # your module with init_db
 
 
 def main():

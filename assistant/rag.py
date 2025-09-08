@@ -1,10 +1,8 @@
 import os
 import json
-import logging
 from time import time
 
-import ingest
-
+import logging
 # ---------------- Logging ----------------
 logging.basicConfig(
     level=logging.INFO,  # DEBUG, INFO, WARNING, ERROR, CRITICAL
@@ -14,30 +12,29 @@ logger = logging.getLogger(__name__)
 # logger.setLevel(logging.INFO)
 
 # ---------------- Config ----------------
+from config import SETTINGS
+
+import ingest
 index = ingest.load_index()
-BASE_URL=os.getenv("OLLAMA_URL", f"http://{('ollama' if os.path.exists('/.dockerenv') else 'localhost')}:11434/v1")
-logger.info(BASE_URL)
-API_KEY=os.getenv('OPENAI_API_KEY', 'ollama')
-LLM_MODEL=os.getenv("LLM_MODEL", "openai/gpt-oss-120b:fireworks-ai")
+
 
 # ---------------- OpenAI ----------------
 from openai import OpenAI
 
-if API_KEY == 'ollama':
+if SETTINGS.LLM_PROVIDER in ['OLLAMA', 'HF']:
     client = OpenAI(
-        base_url=BASE_URL,  # Ollama API endpoint
-        api_key=os.getenv('OPENAI_API_KEY', 'ollama'),  # dummy key (ignored by Ollama)
+        base_url=SETTINGS.BASE_URL,  # Ollama API endpoint
+        api_key=SETTINGS.API_KEY,  # dummy key (ignored by Ollama)
     )
 else:
-    client = OpenAI(api_key=API_KEY)
+    client = OpenAI(api_key=SETTINGS.API_KEY)
 
 
 def search(query):
-    boost = {
-        'intent': 4.709344164326785,
-        'question': 0.9312117423908761,
-        'response': 5.71511647366386,
-        'category': 9.689631225548114}
+    boost = {'intent': 0.022894885883346205,
+        'question': 5.120311766582832,
+        'response': 5.035355456071596,
+        'category': 9.847893877170346}
 
     results = index.search(
         query=query,
@@ -49,24 +46,28 @@ def search(query):
     return results
 
 
+PROMPT_TEMPLATE = """
+You are a customer support assistant specialized in the Media domain.
+Your task is to answer the QUESTION strictly using the information provided in the CONTEXT.
+
+Rules of conduct:
+1. Only use facts explicitly present in the CONTEXT. Do not rely on external knowledge.
+2. If the CONTEXT contains partial information, base your answer only on what is given.
+3. If the CONTEXT does not contain the required information, respond exactly with:
+   "I don’t have that information."
+4. Keep answers clear, concise, and factual. Avoid speculation, assumptions, or subjective language.
+5. Do not rephrase or fabricate details not present in the CONTEXT.
+6. Do not merge or infer facts across unrelated sections of the CONTEXT unless explicitly stated.
+7. Preserve numerical values, names, and terminology exactly as they appear in the CONTEXT.
+8. Do not output meta-comments about your limitations or process (e.g., “As an AI…”).
+
+QUESTION: {instruction}
+
+CONTEXT: '''
+{context}
+'''
+""".strip()
 def build_prompt(query, search_results):
-    prompt_template = """
-    You are a customer support assistant for the Media domain.
-    Answer the QUESTION using only the information from CONTEXT.
-
-    Rules:
-    - Only use facts from CONTEXT.
-    - Keep your answer clear, factual and concise.
-    - Do not hallucinate or add outside knowledge.
-    - Do not invent information not found in CONTEXT.
-    - If CONTEXT doesn’t contain the answer, respond: "I don’t have that information."
-
-    QUESTION: {instruction}
-
-    CONTEXT:
-    {context}
-    """.strip()
-
     context = ""
     for doc in search_results:
         context += (
@@ -76,7 +77,7 @@ def build_prompt(query, search_results):
         )
 
     # Add to template instruction and context
-    prompt = prompt_template.format(instruction=query, context=context).strip()
+    prompt = PROMPT_TEMPLATE.format(instruction=query, context=context).strip()
     return prompt
 
 
@@ -84,7 +85,7 @@ def llm(prompt):
     response = client.chat.completions.create(
         # model='gpt-4o-mini',  # OpenAI
         # model="gpt-oss:20b",   # Ollama "llama3" or any model available in your Ollama
-        model=LLM_MODEL,  # huggingface
+        model=SETTINGS.MODEL_CHAT,  # huggingface
         messages=[{"role": "user", "content": prompt}],
         # temperature=0.0
     )
@@ -100,35 +101,34 @@ def llm(prompt):
     return answer, token_stats
 
 
-evaluation_prompt_template = """
+EVAL_PROMPT_TEMPLATE = """
 You are an expert evaluator for a Retrieval-Augmented Generation (RAG) system.
-Your task is to judge the **relevance** of the generated answer to the given question.
+Your task is to assess the **relevance** of the generated answer to the given question.
 
-Guidelines:
-- Focus and analyze only on relevance the content and context of the generated answer in relation to the question, not style, grammar, or tone.
-- Use exactly one of the following labels:
-  - "NON_RELEVANT": The answer does not address the question.
-  - "PARTLY_RELEVANT": The answer addresses the question partially or contains both correct and irrelevant parts.
-  - "RELEVANT": The answer fully and directly addresses the question.
-- Keep the explanation brief (1-2 sentences).
-- Output valid parsable JSON without using code blocks only, no extra text.
+Evaluation Guidelines:
+1. Judge only on relevance between the QUESTION and the GENERATED ANSWER.
+2. Ignore style, grammar, tone, and fluency. They are not part of this evaluation.
+3. Choose exactly one of the following labels:
+   - "NON_RELEVANT": The answer does not address the question at all.
+   - "PARTLY_RELEVANT": The answer addresses the question partially OR mixes relevant and irrelevant content.
+   - "RELEVANT": The answer fully and directly answers the question with no irrelevant content.
+4. Provide a short, factual explanation (maximum 2 sentences).
+5. The output must be strictly valid JSON, without code fences, without extra text, and without additional commentary.
 
 Evaluation Data:
-
-Question: {question}
-Generated Answer: {answer}
+- Question: {question}
+- Generated Answer: '''
+{answer_llm}
+'''
 
 Output format:
-
 {{
   "Relevance": "NON_RELEVANT" | "PARTLY_RELEVANT" | "RELEVANT",
-  "Explanation": "[Provide a brief explanation for your evaluation]"
+  "Explanation": "[Your brief explanation here]"
 }}
 """.strip()
-
-
 def evaluate_relevance(question, answer):
-    prompt = evaluation_prompt_template.format(question=question, answer=answer)
+    prompt = EVAL_PROMPT_TEMPLATE.format(question=question, answer=answer)
     evaluation, tokens = llm(prompt) #, model="gpt-4o-mini")
 
     try:
@@ -155,7 +155,7 @@ def rag(query):
     answer_data = {
         "answer": answer,
         # "model_used": "gpt-4o-mini",
-        "model_used": os.getenv("LLM_MODEL", "openai/gpt-oss-120b:fireworks-ai"),
+        "model_used": SETTINGS.MODEL_CHAT,
         "response_time": took,
         "relevance": relevance.get("Relevance", "UNKNOWN"),
         "relevance_explanation": relevance.get(
