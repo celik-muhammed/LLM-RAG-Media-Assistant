@@ -28,6 +28,7 @@ if SETTINGS.LLM_PROVIDER in ['OLLAMA', 'HF']:
     )
 else:
     client = OpenAI(api_key=SETTINGS.API_KEY)
+logger.info(f"LLM_PROVIDER: {SETTINGS.LLM_PROVIDER}")
 
 
 def search(query):
@@ -42,7 +43,6 @@ def search(query):
         boost_dict=boost,
         num_results=5
     )
-
     return results
 
 
@@ -82,6 +82,7 @@ def build_prompt(query, search_results):
 
 
 def llm(prompt):
+    logger.info(f"MODEL_CHAT: {SETTINGS.MODEL_CHAT}")
     response = client.chat.completions.create(
         # model='gpt-4o-mini',  # OpenAI
         # model="gpt-oss:20b",   # Ollama "llama3" or any model available in your Ollama
@@ -118,7 +119,7 @@ Evaluation Guidelines:
 Evaluation Data:
 - Question: {question}
 - Generated Answer: '''
-{answer_llm}
+{answer}
 '''
 
 Output format:

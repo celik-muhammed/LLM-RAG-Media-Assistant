@@ -31,44 +31,44 @@ def get_db_connection():
     return psycopg2.connect(**DB_CONFIG)
 
 
-def create_table():
-    """
-    Creates a table for storing embeddings and associated text chunks.
-    Uses vector column for storing 1536-dim embeddings (Postgres pgvector extension).
-    """
-    with get_db_connection() as conn, conn.cursor() as cur:
-        cur.execute(f'''
-            -- Create schema if needed
-            CREATE SCHEMA IF NOT EXISTS public;
+# def create_table():
+#     """
+#     Creates a table for storing embeddings and associated text chunks.
+#     Uses vector column for storing 1536-dim embeddings (Postgres pgvector extension).
+#     """
+#     with get_db_connection() as conn, conn.cursor() as cur:
+#         cur.execute(f'''
+#             -- Create schema if needed
+#             CREATE SCHEMA IF NOT EXISTS public;
 
-            -- Create conversations table
-            CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE} (
-                id TEXT PRIMARY KEY,
-                question TEXT NOT NULL,
-                response TEXT NOT NULL,
-                model_used TEXT NOT NULL,
-                response_time FLOAT NOT NULL,
-                relevance TEXT NOT NULL,
-                relevance_explanation TEXT NOT NULL,
-                prompt_tokens INTEGER NOT NULL,
-                completion_tokens INTEGER NOT NULL,
-                total_tokens INTEGER NOT NULL,
-                eval_prompt_tokens INTEGER NOT NULL,
-                eval_completion_tokens INTEGER NOT NULL,
-                eval_total_tokens INTEGER NOT NULL,
-                timestamp TIMESTAMP WITH TIME ZONE NOT NULL
-            );
+#             -- Create conversations table
+#             CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE} (
+#                 id TEXT PRIMARY KEY,
+#                 question TEXT NOT NULL,
+#                 response TEXT NOT NULL,
+#                 model_used TEXT NOT NULL,
+#                 response_time FLOAT NOT NULL,
+#                 relevance TEXT NOT NULL,
+#                 relevance_explanation TEXT NOT NULL,
+#                 prompt_tokens INTEGER NOT NULL,
+#                 completion_tokens INTEGER NOT NULL,
+#                 total_tokens INTEGER NOT NULL,
+#                 eval_prompt_tokens INTEGER NOT NULL,
+#                 eval_completion_tokens INTEGER NOT NULL,
+#                 eval_total_tokens INTEGER NOT NULL,
+#                 timestamp TIMESTAMP WITH TIME ZONE NOT NULL
+#             );
 
-            -- Create feedback table
-            CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE1} (
-                id SERIAL PRIMARY KEY,
-                conversation_id TEXT REFERENCES {SETTINGS.POSTGRES_TABLE}(id),
-                feedback INTEGER NOT NULL,
-                timestamp TIMESTAMP WITH TIME ZONE NOT NULL
-            );
-        ''')
-        conn.commit()
-        logger.info(f"{SETTINGS.POSTGRES_TABLE} Table created if not exist!")
+#             -- Create feedback table
+#             CREATE TABLE IF NOT EXISTS {SETTINGS.POSTGRES_TABLE1} (
+#                 id SERIAL PRIMARY KEY,
+#                 conversation_id TEXT REFERENCES {SETTINGS.POSTGRES_TABLE}(id),
+#                 feedback INTEGER NOT NULL,
+#                 timestamp TIMESTAMP WITH TIME ZONE NOT NULL
+#             );
+#         ''')
+#         conn.commit()
+#         logger.info(f"{SETTINGS.POSTGRES_TABLE} Table created if not exist!")
 
 
 # Initialize the database schema (drop and create)

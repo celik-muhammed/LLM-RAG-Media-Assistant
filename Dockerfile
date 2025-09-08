@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir pipenv && \
 ######################################################################
 # Copy project files
 ######################################################################
-COPY Data/documents-with-ids.json Data/documents-with-ids.json
+COPY "./Data/documents-with-ids.json" "/Data/documents-with-ids.json"
 COPY assistant .
 
 ######################################################################

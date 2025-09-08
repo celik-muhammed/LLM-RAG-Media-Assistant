@@ -16,18 +16,13 @@ import minsearch  # your module with Index
 from config import SETTINGS
 
 # ---------------- Config ----------------
-DATA_PATH = (
-    SETTINGS.DATA_PATH
-    if os.path.exists('/.dockerenv') else
-    "../Data/documents-with-ids.json"
-)
-logger.info("Loading data from: %s", DATA_PATH)
-if not os.path.exists(DATA_PATH):
-    raise FileNotFoundError(f"Data file not found at {DATA_PATH}")
-logger.info("Data file size: %d bytes", os.path.getsize(DATA_PATH))
+logger.info("Loading data from: %s", SETTINGS.DATA_PATH)
+if not os.path.exists(SETTINGS.DATA_PATH):
+    raise FileNotFoundError(f"Data file not found at {SETTINGS.DATA_PATH}")
+logger.info("Data file size: %d bytes", os.path.getsize(SETTINGS.DATA_PATH))
 
 
-def load_index(data_path=DATA_PATH):
+def load_index(data_path=SETTINGS.DATA_PATH):
     """Load documents from JSON and create a MinSearch index."""
     try:
         with open(data_path, 'rt', encoding='utf-8') as f_in:

@@ -39,6 +39,7 @@ class Settings(BaseModel):
         env_file_encoding = "utf-8"
         case_sensitive = True
 
+    @staticmethod
     def local_or_docker_service(url="", service=None):
         if os.path.exists('/.dockerenv') and service:
             return url.replace("localhost", service)
@@ -48,7 +49,7 @@ class Settings(BaseModel):
             return url
 
     # General
-    DATA_PATH: str = Field(default=os.getenv("DATA_PATH", "Data/documents-with-ids.json"))
+    DATA_PATH: str = Field(default=os.getenv("DATA_PATH", "../Data/documents-with-ids.json"))
     DATA_URL: str = Field(default="https://huggingface.co/datasets/bitext/Bitext-media-llm-chatbot-training-dataset/resolve/main/bitext-media-llm-chatbot-training-dataset.csv")
 
     RUN_TIMEZONE_CHECK: str = os.getenv("RUN_TIMEZONE_CHECK", "0")
@@ -74,31 +75,24 @@ class Settings(BaseModel):
     GRAFANA_ADMIN_PASSWORD: str = Field(default=os.getenv("GRAFANA_ADMIN_PASSWORD", "admin"), repr=False)
     GRAFANA_SECRET_KEY: str = Field(default=os.getenv("GRAFANA_SECRET_KEY", "SECRET_KEY"), repr=False)
 
-    # OpenAI
-    OPENAI_API_KEY: str | None = Field(default=os.getenv("OPENAI_API_KEY", "sk-..."), repr=False)
-    OPENAI_BASE_URL: str = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-    OPENAI_MODEL_EMBED: str = os.getenv("OPENAI_MODEL_EMBED", "text-embedding-3-small")
-    OPENAI_MODEL_CHAT: str = os.getenv("OPENAI_MODEL_CHAT", "gpt-4o-mini")
-
-    # Huggingface
-    HF_TOKEN: str | None = Field(default=os.getenv("HF_TOKEN", "hf-..."), repr=False)
-    HF_API_KEY: str | None = Field(default=os.getenv("HF_TOKEN", "hf-..."), repr=False)
-    HF_BASE_URL: str = os.getenv("HF_BASE_URL", "https://router.huggingface.co/v1")  # for openai chat model
-    HF_MODEL_EMBED: str = os.getenv("HF_MODEL_EMBED", "nomic-ai/nomic-embed-text-v1.5")
-    HF_MODEL_CHAT: str = os.getenv("HF_MODEL_CHAT", "openai/gpt-oss-120b")
-
     # Ollama
     OLLAMA_API_KEY: str = os.getenv("OLLAMA_API_KEY", "ollama")  # dummy key
     OLLAMA_BASE_URL: str = local_or_docker_service(os.getenv("OLLAMA_BASE_URL", "http://localhost:11434/v1"), "ollama")  # "localhost" or "ollama"
     OLLAMA_MODEL_EMBED: str = os.getenv("OLLAMA_MODEL_EMBED", "nomic-embed-text")
     OLLAMA_MODEL_CHAT: str = os.getenv("OLLAMA_MODEL_CHAT", "phi3")
 
-    # Provider selection
-    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "OLLAMA")  #.lower()  ## OPENAI or OLLAMA or HF
-    API_KEY: str | None = Field(default=os.getenv(f"{LLM_PROVIDER}_API_KEY", OLLAMA_API_KEY), repr=False)
-    BASE_URL: str = local_or_docker_service(os.getenv(f"{LLM_PROVIDER}_BASE_URL", OLLAMA_BASE_URL), "ollama")
-    MODEL_EMBED: str = os.getenv(f"{LLM_PROVIDER}_MODEL_EMBED", OLLAMA_MODEL_EMBED)
-    MODEL_CHAT: str = os.getenv(f"{LLM_PROVIDER}_MODEL_CHAT", OLLAMA_MODEL_CHAT)
+    # Huggingface
+    HF_TOKEN: str | None = Field(default=os.getenv("HF_TOKEN", "hf-..."), repr=False)
+    HF_API_KEY: str | None = Field(default=os.getenv("HF_TOKEN", "hf-..."), repr=False)
+    HF_BASE_URL: str = os.getenv("HF_BASE_URL", "https://router.huggingface.co/v1")  # for openai chat model
+    HF_MODEL_EMBED: str = os.getenv("HF_MODEL_EMBED", "nomic-ai/nomic-embed-text-v1.5")
+    HF_MODEL_CHAT: str = os.getenv("HF_MODEL_CHAT", "openai/gpt-oss-120b:together")  # explicit define Providers (together, fireworks-ai, groq, ...)
+
+    # OpenAI
+    OPENAI_API_KEY: str | None = Field(default=os.getenv("OPENAI_API_KEY", "sk-..."), repr=False)
+    OPENAI_BASE_URL: str = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+    OPENAI_MODEL_EMBED: str = os.getenv("OPENAI_MODEL_EMBED", "text-embedding-3-small")
+    OPENAI_MODEL_CHAT: str = os.getenv("OPENAI_MODEL_CHAT", "gpt-4o-mini")
 
     # Scraper
     TIMEOUT_PDF_REQUEST: int = int(os.getenv("TIMEOUT_PDF_REQUEST", 60))
@@ -111,6 +105,34 @@ class Settings(BaseModel):
 
     # Features
     ENABLE_FAISS: bool = os.getenv("ENABLE_FAISS", "false").lower() == "true"
+
+    # Provider selection
+    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "OLLAMA")  #.lower()  ## OPENAI or OLLAMA or HF
+
+    # -------- Computed dynamic properties --------
+    @computed_field  # recomputed each time it's accessed
+    @property
+    def API_KEY(self) -> "str | None":
+        """Dynamically get config based on provider."""
+        return getattr(self, f"{self.LLM_PROVIDER}_API_KEY")
+    
+    @computed_field  # recomputed each time it's accessed
+    @property
+    def BASE_URL(self) -> str:
+        """Dynamically get config based on provider."""
+        return getattr(self, f"{self.LLM_PROVIDER}_BASE_URL")
+    
+    @computed_field  # recomputed each time it's accessed
+    @property
+    def MODEL_EMBED(self) -> str:
+        """Dynamically get config based on provider."""
+        return getattr(self, f"{self.LLM_PROVIDER}_MODEL_EMBED")
+    
+    @computed_field  # recomputed each time it's accessed
+    @property
+    def MODEL_CHAT(self) -> str:
+        """Dynamically get config based on provider."""
+        return getattr(self, f"{self.LLM_PROVIDER}_MODEL_CHAT")  # or os.getenv(f"{self.LLM_PROVIDER}_MODEL_CHAT")
 
 
 # ✅ Instance
