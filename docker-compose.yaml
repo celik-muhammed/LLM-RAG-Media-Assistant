@@ -130,12 +130,12 @@ services:
       - "grafana_data:${GF_PATHS_DATA:-/var/lib/grafana}:rw"
       # Actual dashboards JSON directory (exported dashboards go here)
       # Maps a local file to a file inside the container, and makes it read-only
-      - "./grafana/dashboards/dashboards.json:${GF_PATHS_HOME:-/usr/share/grafana}/dashboards/dashboards.json:ro"  # your exported dashboards
+      - "./grafana_init/dashboards/dashboards.json:${GF_PATHS_HOME:-/usr/share/grafana}/dashboards/dashboards.json:ro"  # your exported dashboards
       # Provisioning configs (dashboards + datasources.yaml)
       # https://grafana.com/docs/grafana/latest/administration/provisioning/
-      - "./grafana/provisioning/dashboards/dashboards.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/dashboards/dashboards.yaml:ro"  # defines dashboards provider
-      - "./grafana/provisioning/datasources/datasources.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/datasources/datasources.yaml:ro"  # defines datasources
-      - "./grafana/custom.ini:${GF_PATHS_CONFIG:-/etc/grafana/grafana.ini}"  # provisioning = true
+      - "./grafana_init/provisioning/dashboards/dashboards.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/dashboards/dashboards.yaml:ro"  # defines dashboards provider
+      - "./grafana_init/provisioning/datasources/datasources.yaml:${GF_PATHS_PROVISIONING:-/etc/grafana/provisioning}/datasources/datasources.yaml:ro"  # defines datasources
+      - "./grafana_init/custom.ini:${GF_PATHS_CONFIG:-/etc/grafana/grafana.ini}"  # provisioning = true
     ports:
       - "3000:3000"
     networks:

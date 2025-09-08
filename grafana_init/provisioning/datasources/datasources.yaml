@@ -40,7 +40,7 @@ datasources:
       # <string> Sets the basic authorization password.
       # basicAuthPassword:
     # <string> Sets the database name, if necessary.
-    database: media_assistant
+    database: llm_rag
     # <bool> Enables basic authorization.
     # basicAuth:
     # <string> Sets the basic authorization username.
@@ -58,7 +58,7 @@ datasources:
     # Grafana UI.
     # editable: false
     jsonData:
-      database: media_assistant
+      database: llm_rag
       sslmode: disable  # disable/require/verify-ca/verify-full
       # maxOpenConns: 100
       # maxIdleConns: 100
