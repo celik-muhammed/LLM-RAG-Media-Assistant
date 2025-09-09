@@ -54,11 +54,17 @@ class Settings(BaseModel):
 
     RUN_TIMEZONE_CHECK: str = os.getenv("RUN_TIMEZONE_CHECK", "0")
     TZ_INFO: str = Field(default=os.getenv("TZ", "Europe/Istanbul"))
-    TZ_UTC: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
+    # TZ_UTC: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    @computed_field  # recomputed each time it's accessed
+    @property
+    def TZ_UTC(self) -> datetime:
+        """Dynamically get config."""
+        return datetime.now(timezone.utc)
     @computed_field  # recomputed each time it's accessed
     @property
     def TZ_LOCAL(self) -> datetime:
+        """Dynamically get config."""
         return datetime.now(ZoneInfo(self.TZ_INFO))
 
     # Postgres

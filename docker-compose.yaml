@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
 
 networks:
   # Define the network globally
@@ -58,21 +58,21 @@ services:
     env_file:
       - .env
     # environment:
-    #   POSTGRES_DB: ${POSTGRES_DB}
-    #   POSTGRES_HOST: ${POSTGRES_HOST}
+    #   POSTGRES_HOST: "${POSTGRES_HOST:-postgres}"  # Ensure POSTGRES_HOST points to the service name
+    #   POSTGRES_DB: "${POSTGRES_DB:-llm_rag}"
     #   POSTGRES_USER: "${POSTGRES_USER:-admin}"
     #   POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-admin}"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       # See: https://gist.github.com/onjin/2dd3cc52ef79069de1faa2dfd456c945
-      - ./postgres_init:/docker-entrypoint-initdb.d
+      - ./postgres_init:/docker-entrypoint-initdb.d  # *.sql or *.sh
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     networks:
       - back-tier  # Ensure network is correctly referenced
     healthcheck:
       # test: ["CMD-SHELL", "pg_isready -U user"]
-      test: ["CMD-SHELL", "pg_isready -U admin -d media_assistant"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d llm_rag"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -81,7 +81,7 @@ services:
   adminer:
     restart: unless-stopped
     image: "adminer:latest"
-    container_name: "adminer"
+    container_name: adminer
     env_file:
       - .env
     # environment:
@@ -152,17 +152,20 @@ services:
     #   "
 
 
-  app:
+  app:  # LLM RAG
+    tty: true
+    stdin_open: true
+    # image: rag  # Flask/FastAPI
     build:
-      context: .   # Flask/FastAPI
+      context: .  # Flask/FastAPI
       dockerfile: Dockerfile
     # env_file:
     #   - .env
     environment:
-      # POSTGRES_HOST: postgres  # Ensure POSTGRES_HOST points to the service name
-      # POSTGRES_DB: ${POSTGRES_DB}
-      # POSTGRES_USER: ${POSTGRES_USER}
-      # POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      # POSTGRES_HOST: "${POSTGRES_HOST:-postgres}"  # Ensure POSTGRES_HOST points to the service name
+      # POSTGRES_DB: "${POSTGRES_DB:-llm_rag}"
+      # POSTGRES_USER: "${POSTGRES_USER:-admin}"
+      # POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-admin}"
       FLASK_ENV: "development"
       DATA_PATH: "../Data/documents-with-ids.json"
       LLM_PROVIDER: "HF"  ## choose one of OPENAI or OLLAMA or HF

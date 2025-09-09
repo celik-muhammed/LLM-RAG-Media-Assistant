@@ -2,6 +2,7 @@
 set -e
 
 # Start Ollama in the background.
+# ollama serve --verbose
 /bin/ollama serve &
 # Record Process ID.
 pid=$!
@@ -15,7 +16,6 @@ echo "🔵 Started Ollama (PID $pid)..."
 # done
 # echo "🟢 Ollama is ready!"
 
-
 # Pull required model, retry until successful
 MODEL="nomic-embed-text"
 echo "🔴 Retrieving Ollama $MODEL model, so to wait until the model download to be completed for the query..."
@@ -27,6 +27,16 @@ until /bin/ollama pull "$MODEL"; do  # ~3-4 min
 done
 echo "🟢 Model $MODEL downloaded successfully!"
 
+# # Pull required model, retry until successful
+# MODEL="phi3"
+# echo "🔴 Retrieving Ollama $MODEL model, so to wait until the model download to be completed for the query..."
+# # ollama pull nomic-embed-text  # for embedding
+# until /bin/ollama pull "$MODEL"; do  # ~3-4 min
+#     echo "Retrying model pull..."
+#     # Pause for Ollama to start.
+#     sleep 5
+# done
+# echo "🟢 Model $MODEL downloaded successfully!"
 
 # Pause for Ollama to start.
 sleep 5
@@ -34,7 +44,6 @@ echo "🔴 Retrieving Ollama phi3 model, so to wait until the model download to 
 # ollama pull nomic-embed-text  # for embedding
 ollama pull phi3 && echo "🟢 Model downloaded successfully!"  # ~3-4 min
 
-
 echo "🟢 Done!"
-# Wait for Ollama process to finish.
+# Keep Ollama running (wait for background process)
 wait $pid
